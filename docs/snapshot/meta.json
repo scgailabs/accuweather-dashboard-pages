@@ -1,0 +1,24 @@
+{
+  "project": "accuweather",
+  "site_title": "AccuWeather Dashboard",
+  "generated_at_kst": "2026-07-15T09:35:10+09:00",
+  "source_dashboard": "http://dashboard:3333",
+  "snapshot_mode": true,
+  "notice": "Static sanitized snapshot. Runtime secrets and write APIs are not published.",
+  "exported_files": [
+    "snapshot/api/summary.json",
+    "snapshot/api/logs.json",
+    "snapshot/api/crawl-timeline.json",
+    "snapshot/api/progress.json",
+    "snapshot/api/system-health.json",
+    "snapshot/api/alerts.json",
+    "snapshot/api/system-logs.json",
+    "snapshot/api/realtime-logs/sources.json",
+    "snapshot/api/data/hourly.json",
+    "snapshot/api/data/daily.json",
+    "snapshot/api/data/monthly.json",
+    "snapshot/api/data/kma_hourly.json",
+    "snapshot/api/data/kma_daily.json"
+  ],
+  "data_limit_per_table": 1000
+}

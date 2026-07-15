@@ -1,0 +1,392 @@
+<!-- File Path : accuweather-crawler/dashboard/templates/index.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherOps Dashboard</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <!-- ═══ Compact Top Navigation ═══ -->
+    <nav class="top-nav compact-nav">
+        <div class="nav-left">
+            <div class="nav-brand"><span class="brand-icon">☁️</span><span>WeatherOps</span></div>
+            <div class="nav-tabs">
+                <button class="top-nav-btn active" onclick="showTopPane('crawler', this)">Crawler Monitor</button>
+                <button class="top-nav-btn" onclick="showTopPane('system', this)">System Monitor</button>
+            </div>
+        </div>
+        <div class="nav-actions">
+            <span class="last-update nav-status" id="lastUpdate"></span>
+            <span class="last-update nav-status" id="sysLastUpdate" style="display:none;"></span>
+            <button class="export-btn" onclick="openDownloadModal()">⬇ Export CSV</button>
+            <button class="refresh-btn" onclick="refreshActivePane()">🔄 새로고침</button>
+            <button class="ctrl-btn dark-mode-btn" id="darkModeBtn" onclick="toggleDarkMode()">🌙 다크</button>
+            <button class="ctrl-btn auto-refresh-btn active" id="autoRefreshBtn" onclick="toggleAutoRefresh()">⟳ 자동갱신 ON</button>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- Crawler Monitor Pane                           -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <div class="top-pane active" id="pane-crawler">
+        <div class="container">
+            <div class="progress-grid" id="progressGrid"></div>
+
+            <div class="summary-grid" id="summaryCards">
+                <div class="card"><div class="label">Hourly 레코드</div><div class="value" id="hourlyTotal">-</div></div>
+                <div class="card"><div class="label">Daily 레코드</div><div class="value" id="dailyTotal">-</div></div>
+                <div class="card"><div class="label">Monthly 레코드</div><div class="value" id="monthlyTotal">-</div></div>
+                <div class="card"><div class="label">KMA Hourly</div><div class="value" id="kmaHourlyTotal">-</div></div>
+                <div class="card"><div class="label">KMA Daily</div><div class="value" id="kmaDailyTotal">-</div></div>
+                <div class="card"><div class="label">전체 합계</div><div class="value" id="grandTotal">-</div></div>
+                <div class="card"><div class="label">최초 수집일</div><div class="value" id="firstCollected" style="font-size:0.95rem;">-</div></div>
+                <div class="card"><div class="label">마지막 수집일</div><div class="value" id="lastCollected" style="font-size:0.95rem;">-</div></div>
+            </div>
+
+            <div class="chart-container">
+                <h3>📊 크롤링 실행 결과 타임라인 (최근 7일)</h3>
+                <div class="timeline-chart" id="timelineChart">
+                    <div id="timelineDates"></div>
+                    <div class="timeline-grid" id="timelineGrid"></div>
+                </div>
+                <div class="chart-legend">
+                    <div class="legend-item"><div class="legend-dot success"></div>성공 (SUCCESS)</div>
+                    <div class="legend-item"><div class="legend-dot no-data"></div>데이터 없음 (NO_DATA)</div>
+                    <div class="legend-item"><div class="legend-dot fail"></div>실패 (FAILED)</div>
+                    <div class="legend-item"><div class="legend-dot empty"></div>미실행</div>
+                </div>
+            </div>
+
+            <div class="chart-container temperature-panel refined-temperature-panel">
+                <div class="trend-header">
+                    <div class="trend-title-block">
+                        <h3>🌡️ 최신 예측 온도 · 변화 범위 · KMA 실측 비교</h3>
+                    </div>
+                </div>
+                <div class="trend-body">
+                    <div class="trend-tab-strip">
+                        <div class="trend-tabs" id="trendSeriesTabs" role="tablist" aria-label="온도 그래프 유형 선택">
+                            <button class="trend-tab-btn hourly active" data-series="hourly" onclick="setTrendSeries('hourly', this)">Hourly</button>
+                            <button class="trend-tab-btn daily" data-series="daily" onclick="setTrendSeries('daily', this)">Daily</button>
+                            <button class="trend-tab-btn monthly" data-series="monthly" onclick="setTrendSeries('monthly', this)">Monthly</button>
+                        </div>
+                        <div class="range-toggle segmented" id="trendRangeToggle"></div>
+                    </div>
+                    <div class="temperature-chart-section">
+                        <div class="trend-legend single-series-legend" id="trendLegend">
+                            <span class="trend-legend-item active-series hourly"><i></i><b>최신 예측값</b></span>
+                            <span class="trend-legend-item range"><i></i>예측 변화 범위</span>
+                            <span class="trend-legend-item low-temp" id="trendLowLegend"><i></i>최저기온 기준선/범위</span>
+                            <span class="trend-legend-item kma-actual"><i></i>KMA 실측 최고</span>
+                            <span class="trend-legend-item kma-low" id="trendKmaLowLegend"><i></i>KMA 최저</span>
+                        </div>
+                        <div class="temperature-chart-wrap" id="temperatureChartWrap">
+                            <div class="chart-loading">온도 그래프 데이터를 불러오는 중...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabs">
+                <button class="tab-btn active" onclick="showTab('logs', this)">📋 크롤링 로그</button>
+                <button class="tab-btn" onclick="showTab('hourly', this)">⏰ Hourly</button>
+                <button class="tab-btn" onclick="showTab('daily', this)">📅 Daily</button>
+                <button class="tab-btn" onclick="showTab('monthly', this)">🗓️ Monthly</button>
+                <button class="tab-btn" onclick="showTab('kma_hourly', this)">🇰🇷 KMA Hourly</button>
+                <button class="tab-btn" onclick="showTab('kma_daily', this)">🇰🇷 KMA Daily</button>
+            </div>
+
+            <div class="tab-content active" id="tab-logs">
+                <div class="table-wrapper">
+                    <table id="table-logs"><thead><tr>
+                        <th onclick="sortTable('logs','id','num')">ID <span class="sort-indicator active" id="sort-logs-id">▼</span></th>
+                        <th onclick="sortTable('logs','job_name','str')">잡 <span class="sort-indicator" id="sort-logs-job_name"></span></th>
+                        <th onclick="sortTable('logs','status','str')">상태 <span class="sort-indicator" id="sort-logs-status"></span></th>
+                        <th onclick="sortTable('logs','rows_inserted','num')">저장 건수 <span class="sort-indicator" id="sort-logs-rows_inserted"></span></th>
+                        <th>메시지</th>
+                        <th onclick="sortTable('logs','started_at','str')">시작 <span class="sort-indicator" id="sort-logs-started_at"></span></th>
+                        <th onclick="sortTable('logs','ended_at','str')">종료 <span class="sort-indicator" id="sort-logs-ended_at"></span></th>
+                    </tr></thead><tbody id="logsBody"></tbody></table>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-hourly">
+                <div class="filter-banner" id="filter-hourly"><span id="filter-hourly-text"></span><button class="clear-btn" onclick="clearFilter('hourly')">필터 해제</button></div>
+                <div class="table-wrapper">
+                    <table id="table-hourly"><thead><tr>
+                        <th onclick="sortTable('hourly','id','num')">ID <span class="sort-indicator active" id="sort-hourly-id">▼</span></th>
+                        <th onclick="sortTable('hourly','target_at','str')">대상일자 <span class="sort-indicator" id="sort-hourly-target_at"></span></th>
+                        <th>대상시각</th>
+                        <th onclick="sortTable('hourly','temp_c','num')">온도(℃) <span class="sort-indicator" id="sort-hourly-temp_c"></span></th>
+                        <th onclick="sortTable('hourly','real_feel','num')">체감 <span class="sort-indicator" id="sort-hourly-real_feel"></span></th>
+                        <th onclick="sortTable('hourly','real_feel_shade','num')">체감(그늘) <span class="sort-indicator" id="sort-hourly-real_feel_shade"></span></th>
+                        <th onclick="sortTable('hourly','wind_speed','str')">바람 <span class="sort-indicator" id="sort-hourly-wind_speed"></span></th>
+                        <th onclick="sortTable('hourly','air_quality','str')">공기질 <span class="sort-indicator" id="sort-hourly-air_quality"></span></th>
+                        <th onclick="sortTable('hourly','max_uv','str')">UV <span class="sort-indicator" id="sort-hourly-max_uv"></span></th>
+                        <th onclick="sortTable('hourly','precip_probability','str')">강수 <span class="sort-indicator" id="sort-hourly-precip_probability"></span></th>
+                        <th>상세</th>
+                        <th onclick="sortTable('hourly','collected_at','str')">수집시각 <span class="sort-indicator" id="sort-hourly-collected_at"></span></th>
+                    </tr></thead><tbody id="hourlyBody"></tbody></table>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-daily">
+                <div class="filter-banner" id="filter-daily"><span id="filter-daily-text"></span><button class="clear-btn" onclick="clearFilter('daily')">필터 해제</button></div>
+                <div class="table-wrapper">
+                    <table id="table-daily"><thead><tr>
+                        <th onclick="sortTable('daily','id','num')">ID <span class="sort-indicator active" id="sort-daily-id">▼</span></th>
+                        <th onclick="sortTable('daily','target_date','str')">대상일자 <span class="sort-indicator" id="sort-daily-target_date"></span></th>
+                        <th onclick="sortTable('daily','dow','num')">요일 <span class="sort-indicator" id="sort-daily-dow"></span></th>
+                        <th onclick="sortTable('daily','tmax','num')">최고(℃) <span class="sort-indicator" id="sort-daily-tmax"></span></th>
+                        <th onclick="sortTable('daily','tmin','num')">최저(℃) <span class="sort-indicator" id="sort-daily-tmin"></span></th>
+                        <th onclick="sortTable('daily','precip_pct','num')">강수(%) <span class="sort-indicator" id="sort-daily-precip_pct"></span></th>
+                        <th onclick="sortTable('daily','realfeel','num')">체감 <span class="sort-indicator" id="sort-daily-realfeel"></span></th>
+                        <th onclick="sortTable('daily','realfeel_shade','num')">그늘체감 <span class="sort-indicator" id="sort-daily-realfeel_shade"></span></th>
+                        <th onclick="sortTable('daily','uv_max','num')">UV <span class="sort-indicator" id="sort-daily-uv_max"></span></th>
+                        <th onclick="sortTable('daily','wind_dir','str')">풍향 <span class="sort-indicator" id="sort-daily-wind_dir"></span></th>
+                        <th onclick="sortTable('daily','wind_kmh','num')">풍속(km/h) <span class="sort-indicator" id="sort-daily-wind_kmh"></span></th>
+                        <th onclick="sortTable('daily','collected_at','str')">수집시각 <span class="sort-indicator" id="sort-daily-collected_at"></span></th>
+                    </tr></thead><tbody id="dailyBody"></tbody></table>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-monthly">
+                <div class="filter-banner" id="filter-monthly"><span id="filter-monthly-text"></span><button class="clear-btn" onclick="clearFilter('monthly')">필터 해제</button></div>
+                <div class="table-wrapper">
+                    <table id="table-monthly"><thead><tr>
+                        <th onclick="sortTable('monthly','id','num')">ID <span class="sort-indicator active" id="sort-monthly-id">▼</span></th>
+                        <th onclick="sortTable('monthly','target_date','str')">대상일자 <span class="sort-indicator" id="sort-monthly-target_date"></span></th>
+                        <th onclick="sortTable('monthly','tmax','num')">최고(℃) <span class="sort-indicator" id="sort-monthly-tmax"></span></th>
+                        <th onclick="sortTable('monthly','tmin','num')">최저(℃) <span class="sort-indicator" id="sort-monthly-tmin"></span></th>
+                        <th onclick="sortTable('monthly','collected_at','str')">수집시각 <span class="sort-indicator" id="sort-monthly-collected_at"></span></th>
+                    </tr></thead><tbody id="monthlyBody"></tbody></table>
+                </div>
+            </div>
+
+
+            <div class="tab-content" id="tab-kma_hourly">
+                <div class="filter-banner" id="filter-kma_hourly"><span id="filter-kma_hourly-text"></span><button class="clear-btn" onclick="clearFilter('kma_hourly')">필터 해제</button></div>
+                <div class="table-wrapper">
+                    <table id="table-kma_hourly"><thead><tr>
+                        <th onclick="sortTable('kma_hourly','id','num')">ID <span class="sort-indicator active" id="sort-kma_hourly-id">▼</span></th>
+                        <th onclick="sortTable('kma_hourly','observed_at','str')">관측시각 <span class="sort-indicator" id="sort-kma_hourly-observed_at"></span></th>
+                        <th onclick="sortTable('kma_hourly','stn','num')">지점 <span class="sort-indicator" id="sort-kma_hourly-stn"></span></th>
+                        <th onclick="sortTable('kma_hourly','temp_c','num')">기온(℃) <span class="sort-indicator" id="sort-kma_hourly-temp_c"></span></th>
+                        <th onclick="sortTable('kma_hourly','humidity_pct','num')">습도(%) <span class="sort-indicator" id="sort-kma_hourly-humidity_pct"></span></th>
+                        <th onclick="sortTable('kma_hourly','wind_speed_ms','num')">풍속(m/s) <span class="sort-indicator" id="sort-kma_hourly-wind_speed_ms"></span></th>
+                        <th onclick="sortTable('kma_hourly','rain_mm','num')">강수(mm) <span class="sort-indicator" id="sort-kma_hourly-rain_mm"></span></th>
+                        <th>원본</th>
+                        <th onclick="sortTable('kma_hourly','collected_at','str')">수집시각 <span class="sort-indicator" id="sort-kma_hourly-collected_at"></span></th>
+                    </tr></thead><tbody id="kmaHourlyBody"></tbody></table>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-kma_daily">
+                <div class="filter-banner" id="filter-kma_daily"><span id="filter-kma_daily-text"></span><button class="clear-btn" onclick="clearFilter('kma_daily')">필터 해제</button></div>
+                <div class="table-wrapper">
+                    <table id="table-kma_daily"><thead><tr>
+                        <th onclick="sortTable('kma_daily','id','num')">ID <span class="sort-indicator active" id="sort-kma_daily-id">▼</span></th>
+                        <th onclick="sortTable('kma_daily','observed_date','str')">관측일 <span class="sort-indicator" id="sort-kma_daily-observed_date"></span></th>
+                        <th onclick="sortTable('kma_daily','stn','num')">지점 <span class="sort-indicator" id="sort-kma_daily-stn"></span></th>
+                        <th onclick="sortTable('kma_daily','temp_avg_c','num')">평균(℃) <span class="sort-indicator" id="sort-kma_daily-temp_avg_c"></span></th>
+                        <th onclick="sortTable('kma_daily','temp_max_c','num')">최고(℃) <span class="sort-indicator" id="sort-kma_daily-temp_max_c"></span></th>
+                        <th onclick="sortTable('kma_daily','temp_min_c','num')">최저(℃) <span class="sort-indicator" id="sort-kma_daily-temp_min_c"></span></th>
+                        <th onclick="sortTable('kma_daily','rain_day_mm','num')">일강수(mm) <span class="sort-indicator" id="sort-kma_daily-rain_day_mm"></span></th>
+                        <th onclick="sortTable('kma_daily','humidity_avg_pct','num')">평균습도(%) <span class="sort-indicator" id="sort-kma_daily-humidity_avg_pct"></span></th>
+                        <th>원본</th>
+                        <th onclick="sortTable('kma_daily','collected_at','str')">수집시각 <span class="sort-indicator" id="sort-kma_daily-collected_at"></span></th>
+                    </tr></thead><tbody id="kmaDailyBody"></tbody></table>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- System Monitor Pane                            -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <div class="top-pane" id="pane-system">
+        <div class="container">
+            <div class="summary-grid" style="margin-bottom:16px;">
+                <div class="card"><div class="label">Discord 알림</div><div class="value" id="discordStatus" style="font-size:0.95rem;">-</div></div>
+                <div class="card"><div class="label">최근 1시간 실패</div><div class="value" id="recentFailures" style="font-size:0.95rem;">-</div></div>
+            </div>
+
+            <div id="systemAlertBanner" style="display:none; background:#fce8e6; border:1px solid #ea4335; border-radius:8px; padding:12px 16px; margin-bottom:16px; color:#d93025; font-size:0.88rem;">
+                <strong>⚠️ 장애 감지:</strong> <span id="systemAlertBannerText"></span>
+            </div>
+
+            <div class="sys-tabs">
+                <button class="sys-tab-btn active" onclick="showSysTab('syslogs', this)">📄 시스템 로그</button>
+                <button class="sys-tab-btn" onclick="showSysTab('alerts', this)">🔔 알림 이력</button>
+                <button class="sys-tab-btn" onclick="showSysTab('terminal', this)">🖥️ 실시간 로그</button>
+            </div>
+
+            <div class="sys-tab-content active" id="systab-syslogs">
+                <div style="display:flex; gap:8px; margin-bottom:12px; flex-wrap:wrap; align-items:center;">
+                    <label style="font-size:0.82rem; font-weight:600; color:var(--text-secondary);">필터:</label>
+                    <select id="syslog-job-filter" style="padding:5px 10px; border:1px solid var(--border-input); border-radius:6px; font-size:0.82rem; background:var(--bg-input); color:var(--text-primary);">
+                        <option value="">전체 잡</option><option value="hourly">Hourly</option><option value="daily">Daily</option><option value="monthly">Monthly</option><option value="kma_hourly">KMA Hourly</option><option value="kma_daily">KMA Daily</option>
+                    </select>
+                    <select id="syslog-status-filter" style="padding:5px 10px; border:1px solid var(--border-input); border-radius:6px; font-size:0.82rem; background:var(--bg-input); color:var(--text-primary);">
+                        <option value="">전체 상태</option><option value="SUCCESS">SUCCESS</option><option value="FAILED">FAILED</option><option value="NO_DATA">NO_DATA</option>
+                    </select>
+                    <button class="refresh-btn" style="padding:5px 14px; font-size:0.82rem;" onclick="loadSystemLogs()">조회</button>
+                </div>
+                <div class="table-wrapper" style="max-height:450px;">
+                    <table id="table-syslogs"><thead><tr>
+                        <th>ID</th><th>잡</th><th>상태</th><th>저장 건수</th><th>소요(초)</th><th>메시지</th><th>알림발송</th><th>run_id</th><th>시작</th><th>종료</th><th>Traceback</th>
+                    </tr></thead><tbody id="syslogsBody"></tbody></table>
+                </div>
+            </div>
+
+            <div class="sys-tab-content" id="systab-alerts">
+                <div class="table-wrapper" style="max-height:450px;">
+                    <table id="table-alerts"><thead><tr>
+                        <th>ID</th><th>유형</th><th>잡</th><th>심각도</th><th>메시지</th><th>전송 대상</th><th>상태</th><th>발송시각</th>
+                    </tr></thead><tbody id="alertsBody"></tbody></table>
+                </div>
+            </div>
+
+            <!-- 실시간 로그 터미널 -->
+            <div class="sys-tab-content" id="systab-terminal">
+                <div class="terminal-container">
+                    <div class="terminal-header">
+                        <div class="terminal-header-left">
+                            <div class="terminal-dots"><div class="terminal-dot red"></div><div class="terminal-dot yellow"></div><div class="terminal-dot green"></div></div>
+                            <span class="terminal-title" id="terminalTitle">로그 뷰어</span>
+                        </div>
+                        <div class="terminal-controls">
+                            <select class="terminal-select" id="terminalSource" onchange="switchLogSource()">
+                                <option value="">-- 로그 소스 선택 --</option>
+                            </select>
+                            <button class="terminal-btn active" id="terminalAutoScroll" onclick="toggleTermAutoScroll()">Auto-scroll: ON</button>
+                            <button class="terminal-btn" onclick="clearTerminal()">Clear</button>
+                            <button class="terminal-btn" onclick="refreshLogSources()">🔄</button>
+                        </div>
+                    </div>
+                    <div class="terminal-filter-bar">
+                        <span style="color:#888; font-size:0.78rem;">Filter:</span>
+                        <input type="text" class="terminal-filter-input" id="terminalFilter" placeholder="텍스트 필터링 (예: ERROR, WARNING, hourly ...)" oninput="renderTerminalLines()">
+                    </div>
+                    <div class="terminal-body" id="terminalBody">
+                        <div class="log-line"><span class="log-text" style="color:#888;">로그 소스를 선택하세요...</span></div>
+                    </div>
+                    <div class="terminal-status">
+                        <span id="terminalStatusLeft">Ready</span>
+                        <span id="terminalStatusRight">Lines: 0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal-backdrop" id="rawDetailModalBackdrop" onclick="closeDetailModal(event)">
+        <div class="download-modal raw-detail-modal" role="dialog" aria-modal="true" aria-labelledby="rawDetailTitle" onclick="event.stopPropagation()">
+            <div class="modal-header compact-modal-header">
+                <div>
+                    <div class="modal-kicker">RAW DETAIL</div>
+                    <h3 id="rawDetailTitle">원본 상세 데이터</h3>
+                </div>
+                <button class="modal-close" onclick="closeDetailModal()" aria-label="닫기">×</button>
+            </div>
+            <div class="modal-body">
+                <pre class="raw-detail-content" id="rawDetailContent">-</pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-backdrop" id="downloadModalBackdrop" onclick="closeDownloadModal(event)">
+        <div class="download-modal" role="dialog" aria-modal="true" aria-labelledby="downloadModalTitle" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <div>
+                    <div class="modal-kicker">CSV EXPORT</div>
+                    <h3 id="downloadModalTitle">데이터 다운로드</h3>
+                    <p>누적 저장 데이터에서 최신 스냅샷 또는 전체 수집 이력을 선택해 내려받습니다.</p>
+                </div>
+                <button class="modal-close" onclick="closeDownloadModal()" aria-label="닫기">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="export-grid">
+                    <label class="export-field full">
+                        <span>데이터 유형</span>
+                        <select id="downloadDataType" onchange="updateDownloadTypeUI(true)">
+                            <option value="hourly">AccuWeather Hourly Forecast</option>
+                            <option value="daily">AccuWeather Daily Forecast</option>
+                            <option value="monthly">AccuWeather Monthly Forecast</option>
+                            <option value="kma_hourly">KMA ASOS Hourly Observation</option>
+                            <option value="kma_daily">KMA ASOS Daily Observation</option>
+                        </select>
+                    </label>
+
+                    <div class="export-field full">
+                        <span>다운로드 모드</span>
+                        <div class="export-choice-row">
+                            <label class="export-choice active" id="downloadModeAllLabel">
+                                <input type="radio" name="downloadMode" value="all" checked onchange="syncDownloadModeCards()">
+                                <b>전체 누적 데이터</b>
+                                <small>각 크롤링/수집 시점의 모든 row를 다운로드</small>
+                            </label>
+                            <label class="export-choice" id="downloadModeLatestLabel">
+                                <input type="radio" name="downloadMode" value="latest" onchange="syncDownloadModeCards()">
+                                <b>최신 스냅샷만</b>
+                                <small>대상시각/대상일자별 최신 수집 row만 다운로드</small>
+                            </label>
+                        </div>
+                    </div>
+
+                    <label class="export-field">
+                        <span id="downloadTargetFromLabel">대상 시작</span>
+                        <input type="datetime-local" id="downloadTargetFrom">
+                    </label>
+                    <label class="export-field">
+                        <span id="downloadTargetToLabel">대상 종료</span>
+                        <input type="datetime-local" id="downloadTargetTo">
+                    </label>
+                    <label class="export-field">
+                        <span>수집 시작</span>
+                        <input type="datetime-local" id="downloadCollectedFrom">
+                    </label>
+                    <label class="export-field">
+                        <span>수집 종료</span>
+                        <input type="datetime-local" id="downloadCollectedTo">
+                    </label>
+                </div>
+                <div class="export-hint" id="downloadRangeHint">데이터 범위를 불러오는 중...</div>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-secondary" onclick="resetDownloadFilters()">범위 초기화</button>
+                <button class="modal-primary" onclick="downloadCSVFromModal()">CSV 다운로드</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="chart-tooltip" id="chartTooltip"></div>
+    <div class="preview-box" id="previewBox"><h4 id="previewTitle"></h4><div id="previewContent"></div></div>
+
+    
+    <script>
+      window.SNAPSHOT_MODE = true;
+      window.SNAPSHOT_PROJECT = "accuweather";
+      window.SNAPSHOT_META_URL = 'snapshot/meta.json';
+    </script>
+    <script src="static/js/snapshot-adapter.js"></script>
+    <script src="static/js/app.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        fetch('snapshot/meta.json').then(function(r){return r.json();}).then(function(meta){
+          var el = document.createElement('div');
+          el.style.cssText = 'position:fixed;right:16px;bottom:16px;z-index:9999;padding:8px 12px;border-radius:999px;background:rgba(30,64,175,.92);color:#fff;font-size:12px;box-shadow:0 8px 24px rgba(0,0,0,.18)';
+          el.textContent = '정적 스냅샷 · ' + (meta.generated_at_kst || '');
+          document.body.appendChild(el);
+        }).catch(function(){});
+      });
+    </script>
+</body>
+</html>
