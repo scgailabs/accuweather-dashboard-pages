@@ -1,6 +1,32 @@
 [
   {
     "alert_sent": true,
+    "created_at": "2026-07-17T15:08:19.640118+09:00",
+    "duration_seconds": 0.305729,
+    "ended_at": "2026-07-17T15:08:19.277565+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
+    "id": 575,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "run_id": "cf1a3087-a1",
+    "started_at": "2026-07-17T15:08:18.971836+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
+    "created_at": "2026-07-17T15:08:18.900635+09:00",
+    "duration_seconds": 49.50552,
+    "ended_at": "2026-07-17T15:08:18.550487+09:00",
+    "error_message": "hourly crawl completed. 80 records saved. attempt=1",
+    "id": 574,
+    "job_name": "hourly",
+    "rows_inserted": 80,
+    "run_id": "575c0209-a1",
+    "started_at": "2026-07-17T15:07:29.044968+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
     "created_at": "2026-07-17T14:07:44.394025+09:00",
     "duration_seconds": 0.565555,
     "ended_at": "2026-07-17T14:07:44.026354+09:00",
@@ -1272,31 +1298,5 @@
     "run_id": "cfedebe2-a3",
     "started_at": "2026-07-16T00:23:53.590510+09:00",
     "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-07-16T00:18:53.479613+09:00",
-    "duration_seconds": 0.423057,
-    "ended_at": "2026-07-16T00:18:53.113567+09:00",
-    "error_message": "Crawl completed but 0 records saved. Possible bot block or selector mismatch. attempt=2",
-    "id": 475,
-    "job_name": "kma_daily",
-    "rows_inserted": 0,
-    "run_id": "1c036477-a2",
-    "started_at": "2026-07-16T00:18:52.690510+09:00",
-    "status": "NO_DATA"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-07-16T00:13:52.555720+09:00",
-    "duration_seconds": 0.312254,
-    "ended_at": "2026-07-16T00:13:52.190118+09:00",
-    "error_message": "Crawl completed but 0 records saved. Possible bot block or selector mismatch. attempt=1",
-    "id": 474,
-    "job_name": "kma_daily",
-    "rows_inserted": 0,
-    "run_id": "4af257c2-a1",
-    "started_at": "2026-07-16T00:13:51.877864+09:00",
-    "status": "NO_DATA"
   }
 ]
