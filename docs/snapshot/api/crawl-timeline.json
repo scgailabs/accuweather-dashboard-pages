@@ -1,26 +1,6 @@
 [
   {
     "cnt": 1,
-    "job_name": "hourly",
-    "last_error": null,
-    "last_event_at": "2026-07-12T15:04:24.855745+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-07-12T15:00:00+09:00",
-    "total_rows": 80
-  },
-  {
-    "cnt": 3,
-    "job_name": "kma_hourly",
-    "last_error": "503 Server Error: Service Unavailable for url: https://apihub.kma.go.kr/api/typ01/url/kma_sfctm2.php?tm=&stn=108&authKey=[redacted] attempt=2",
-    "last_event_at": "2026-07-12T15:14:27.246306+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-07-12T15:00:00+09:00",
-    "total_rows": 1
-  },
-  {
-    "cnt": 1,
     "job_name": "daily",
     "last_error": null,
     "last_event_at": "2026-07-12T16:13:03.919369+09:00",
@@ -4267,6 +4247,26 @@
     "status": "SUCCESS",
     "target_range_sample": null,
     "time_slot": "2026-07-19T14:00:00+09:00",
+    "total_rows": 1
+  },
+  {
+    "cnt": 1,
+    "job_name": "hourly",
+    "last_error": null,
+    "last_event_at": "2026-07-19T15:08:08.233408+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-07-19T15:00:00+09:00",
+    "total_rows": 80
+  },
+  {
+    "cnt": 1,
+    "job_name": "kma_hourly",
+    "last_error": null,
+    "last_event_at": "2026-07-19T15:08:08.937832+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-07-19T15:00:00+09:00",
     "total_rows": 1
   }
 ]
