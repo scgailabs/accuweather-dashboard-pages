@@ -1,5 +1,35 @@
 [
   {
+    "created_at": "2026-07-21T01:04:34.815087+09:00",
+    "ended_at": "2026-07-21T01:04:34.320253+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
+    "id": 794,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "started_at": "2026-07-21T01:04:34.049857+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "created_at": "2026-07-21T01:04:33.980491+09:00",
+    "ended_at": "2026-07-21T01:04:33.512185+09:00",
+    "error_message": "hourly crawl completed. 94 records saved. attempt=1",
+    "id": 793,
+    "job_name": "hourly",
+    "rows_inserted": 94,
+    "started_at": "2026-07-21T01:03:44.122186+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "created_at": "2026-07-21T00:22:29.109179+09:00",
+    "ended_at": "2026-07-21T00:22:28.768676+09:00",
+    "error_message": "kma_daily crawl completed. 1 records saved. attempt=3",
+    "id": 792,
+    "job_name": "kma_daily",
+    "rows_inserted": 1,
+    "started_at": "2026-07-21T00:22:28.277616+09:00",
+    "status": "SUCCESS"
+  },
+  {
     "created_at": "2026-07-21T00:17:28.198078+09:00",
     "ended_at": "2026-07-21T00:17:27.791181+09:00",
     "error_message": "Crawl completed but 0 records saved. Possible bot block or selector mismatch. attempt=2",
@@ -467,36 +497,6 @@
     "job_name": "kma_hourly",
     "rows_inserted": 1,
     "started_at": "2026-07-20T07:07:48.040072+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "created_at": "2026-07-20T07:07:47.963229+09:00",
-    "ended_at": "2026-07-20T07:07:47.446151+09:00",
-    "error_message": "hourly crawl completed. 88 records saved. attempt=1",
-    "id": 744,
-    "job_name": "hourly",
-    "rows_inserted": 88,
-    "started_at": "2026-07-20T07:06:51.131803+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "created_at": "2026-07-20T06:03:22.458431+09:00",
-    "ended_at": "2026-07-20T06:03:22.094250+09:00",
-    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
-    "id": 743,
-    "job_name": "kma_hourly",
-    "rows_inserted": 1,
-    "started_at": "2026-07-20T06:03:21.707868+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "created_at": "2026-07-20T06:03:21.626984+09:00",
-    "ended_at": "2026-07-20T06:03:21.152059+09:00",
-    "error_message": "hourly crawl completed. 89 records saved. attempt=1",
-    "id": 742,
-    "job_name": "hourly",
-    "rows_inserted": 89,
-    "started_at": "2026-07-20T06:02:26.573403+09:00",
     "status": "SUCCESS"
   }
 ]
