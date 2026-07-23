@@ -1,6 +1,32 @@
 [
   {
     "alert_sent": true,
+    "created_at": "2026-07-23T14:06:33.051166+09:00",
+    "duration_seconds": 0.36965,
+    "ended_at": "2026-07-23T14:06:32.683457+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
+    "id": 953,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "run_id": "a6ad693c-a1",
+    "started_at": "2026-07-23T14:06:32.313807+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
+    "created_at": "2026-07-23T14:06:32.238750+09:00",
+    "duration_seconds": 49.653687,
+    "ended_at": "2026-07-23T14:06:31.658146+09:00",
+    "error_message": "hourly crawl completed. 81 records saved. attempt=1",
+    "id": 952,
+    "job_name": "hourly",
+    "rows_inserted": 81,
+    "run_id": "ad9cfb9d-a1",
+    "started_at": "2026-07-23T14:05:42.004460+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
     "created_at": "2026-07-23T13:07:58.359772+09:00",
     "duration_seconds": 0.337415,
     "ended_at": "2026-07-23T13:07:58.013072+09:00",
@@ -1272,31 +1298,5 @@
     "run_id": "1a77fd0b-a1",
     "started_at": "2026-07-22T00:13:33.571497+09:00",
     "status": "NO_DATA"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-07-22T00:13:33.508102+09:00",
-    "duration_seconds": 7.529716,
-    "ended_at": "2026-07-22T00:13:33.096595+09:00",
-    "error_message": "daily crawl completed. 15 records saved. attempt=1",
-    "id": 853,
-    "job_name": "daily",
-    "rows_inserted": 15,
-    "run_id": "22ffb40b-a1",
-    "started_at": "2026-07-22T00:13:25.566879+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-07-22T00:04:33.396188+09:00",
-    "duration_seconds": 0.452725,
-    "ended_at": "2026-07-22T00:04:33.037368+09:00",
-    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
-    "id": 852,
-    "job_name": "kma_hourly",
-    "rows_inserted": 1,
-    "run_id": "2fc53394-a1",
-    "started_at": "2026-07-22T00:04:32.584643+09:00",
-    "status": "SUCCESS"
   }
 ]
