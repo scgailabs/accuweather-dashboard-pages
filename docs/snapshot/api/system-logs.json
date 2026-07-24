@@ -1,6 +1,32 @@
 [
   {
     "alert_sent": true,
+    "created_at": "2026-07-24T14:07:08.132465+09:00",
+    "duration_seconds": 0.407351,
+    "ended_at": "2026-07-24T14:07:07.734577+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
+    "id": 1016,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "run_id": "dc15f083-a1",
+    "started_at": "2026-07-24T14:07:07.327226+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
+    "created_at": "2026-07-24T14:07:07.260117+09:00",
+    "duration_seconds": 49.525604,
+    "ended_at": "2026-07-24T14:07:06.848569+09:00",
+    "error_message": "hourly crawl completed. 81 records saved. attempt=1",
+    "id": 1015,
+    "job_name": "hourly",
+    "rows_inserted": 81,
+    "run_id": "4cca9cb2-a1",
+    "started_at": "2026-07-24T14:06:17.322965+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
     "created_at": "2026-07-24T13:03:18.726588+09:00",
     "duration_seconds": 0.29026,
     "ended_at": "2026-07-24T13:03:18.233212+09:00",
@@ -1272,31 +1298,5 @@
     "run_id": "32d65a02-a1",
     "started_at": "2026-07-23T00:14:31.789341+09:00",
     "status": "NO_DATA"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-07-23T00:14:31.722746+09:00",
-    "duration_seconds": 9.508939,
-    "ended_at": "2026-07-23T00:14:31.338671+09:00",
-    "error_message": "daily crawl completed. 15 records saved. attempt=1",
-    "id": 916,
-    "job_name": "daily",
-    "rows_inserted": 15,
-    "run_id": "a82109df-a1",
-    "started_at": "2026-07-23T00:14:21.829732+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-07-23T00:04:11.197210+09:00",
-    "duration_seconds": 0.259296,
-    "ended_at": "2026-07-23T00:04:10.785992+09:00",
-    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
-    "id": 915,
-    "job_name": "kma_hourly",
-    "rows_inserted": 1,
-    "run_id": "f03f5536-a1",
-    "started_at": "2026-07-23T00:04:10.526696+09:00",
-    "status": "SUCCESS"
   }
 ]
