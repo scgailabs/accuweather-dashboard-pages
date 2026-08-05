@@ -1,5 +1,25 @@
 [
   {
+    "created_at": "2026-08-05T10:06:20.113072+09:00",
+    "ended_at": "2026-08-05T10:06:19.716365+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
+    "id": 1774,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "started_at": "2026-08-05T10:06:19.415274+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "created_at": "2026-08-05T10:06:19.330927+09:00",
+    "ended_at": "2026-08-05T10:06:18.945830+09:00",
+    "error_message": "hourly crawl completed. 85 records saved. attempt=1",
+    "id": 1773,
+    "job_name": "hourly",
+    "rows_inserted": 85,
+    "started_at": "2026-08-05T10:05:24.520271+09:00",
+    "status": "SUCCESS"
+  },
+  {
     "created_at": "2026-08-05T09:06:51.516457+09:00",
     "ended_at": "2026-08-05T09:06:51.135063+09:00",
     "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
@@ -477,26 +497,6 @@
     "job_name": "kma_daily",
     "rows_inserted": 1,
     "started_at": "2026-08-04T16:12:32.712920+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "created_at": "2026-08-04T16:12:32.645574+09:00",
-    "ended_at": "2026-08-04T16:12:32.286141+09:00",
-    "error_message": "daily crawl completed. 15 records saved. attempt=1",
-    "id": 1724,
-    "job_name": "daily",
-    "rows_inserted": 15,
-    "started_at": "2026-08-04T16:12:22.685070+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "created_at": "2026-08-04T16:03:10.433707+09:00",
-    "ended_at": "2026-08-04T16:03:10.092269+09:00",
-    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
-    "id": 1723,
-    "job_name": "kma_hourly",
-    "rows_inserted": 1,
-    "started_at": "2026-08-04T16:03:09.743447+09:00",
     "status": "SUCCESS"
   }
 ]
