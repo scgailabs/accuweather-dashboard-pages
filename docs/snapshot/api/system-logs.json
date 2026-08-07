@@ -1,6 +1,32 @@
 [
   {
     "alert_sent": true,
+    "created_at": "2026-08-07T13:04:26.384099+09:00",
+    "duration_seconds": 0.310973,
+    "ended_at": "2026-08-07T13:04:25.861942+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
+    "id": 1909,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "run_id": "ab6ada65-a1",
+    "started_at": "2026-08-07T13:04:25.550969+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
+    "created_at": "2026-08-07T13:04:25.461389+09:00",
+    "duration_seconds": 53.938778,
+    "ended_at": "2026-08-07T13:04:25.066050+09:00",
+    "error_message": "hourly crawl completed. 82 records saved. attempt=1",
+    "id": 1908,
+    "job_name": "hourly",
+    "rows_inserted": 82,
+    "run_id": "e85de3b1-a1",
+    "started_at": "2026-08-07T13:03:31.127271+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
     "created_at": "2026-08-07T12:14:09.042310+09:00",
     "duration_seconds": 0.41723,
     "ended_at": "2026-08-07T12:14:08.667877+09:00",
@@ -1271,32 +1297,6 @@
     "rows_inserted": 15,
     "run_id": "41f5fdc4-a1",
     "started_at": "2026-08-06T00:14:12.564454+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-08-06T00:03:09.174348+09:00",
-    "duration_seconds": 0.30168,
-    "ended_at": "2026-08-06T00:03:06.903685+09:00",
-    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
-    "id": 1809,
-    "job_name": "kma_hourly",
-    "rows_inserted": 1,
-    "run_id": "01b1f435-a1",
-    "started_at": "2026-08-06T00:03:06.602005+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-08-06T00:03:06.514335+09:00",
-    "duration_seconds": 54.516846,
-    "ended_at": "2026-08-06T00:03:06.125267+09:00",
-    "error_message": "hourly crawl completed. 95 records saved. attempt=1",
-    "id": 1808,
-    "job_name": "hourly",
-    "rows_inserted": 95,
-    "run_id": "08aafa86-a1",
-    "started_at": "2026-08-06T00:02:11.608422+09:00",
     "status": "SUCCESS"
   }
 ]
