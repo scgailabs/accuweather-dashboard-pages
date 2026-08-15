@@ -1,5 +1,35 @@
 [
   {
+    "created_at": "2026-08-15T11:09:39.645135+09:00",
+    "ended_at": "2026-08-15T11:09:38.730717+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=2",
+    "id": 2417,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "started_at": "2026-08-15T11:09:38.467209+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "created_at": "2026-08-15T11:04:38.411113+09:00",
+    "ended_at": "2026-08-15T11:04:37.985790+09:00",
+    "error_message": "Crawl completed but 0 records saved. Possible bot block or selector mismatch. attempt=1",
+    "id": 2416,
+    "job_name": "kma_hourly",
+    "rows_inserted": 0,
+    "started_at": "2026-08-15T11:04:37.631576+09:00",
+    "status": "NO_DATA"
+  },
+  {
+    "created_at": "2026-08-15T11:04:37.535363+09:00",
+    "ended_at": "2026-08-15T11:04:37.112151+09:00",
+    "error_message": "hourly crawl completed. 84 records saved. attempt=1",
+    "id": 2415,
+    "job_name": "hourly",
+    "rows_inserted": 84,
+    "started_at": "2026-08-15T11:03:42.562399+09:00",
+    "status": "SUCCESS"
+  },
+  {
     "created_at": "2026-08-15T10:07:01.670635+09:00",
     "ended_at": "2026-08-15T10:07:01.297992+09:00",
     "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
@@ -467,36 +497,6 @@
     "job_name": "hourly",
     "rows_inserted": 77,
     "started_at": "2026-08-14T18:02:02.186552+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "created_at": "2026-08-14T17:05:04.731157+09:00",
-    "ended_at": "2026-08-14T17:05:04.117656+09:00",
-    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
-    "id": 2367,
-    "job_name": "kma_hourly",
-    "rows_inserted": 1,
-    "started_at": "2026-08-14T17:05:03.735310+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "created_at": "2026-08-14T17:05:03.622739+09:00",
-    "ended_at": "2026-08-14T17:05:03.243356+09:00",
-    "error_message": "hourly crawl completed. 78 records saved. attempt=1",
-    "id": 2366,
-    "job_name": "hourly",
-    "rows_inserted": 78,
-    "started_at": "2026-08-14T17:04:19.409913+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "created_at": "2026-08-14T16:13:41.157611+09:00",
-    "ended_at": "2026-08-14T16:13:40.741659+09:00",
-    "error_message": "kma_daily crawl completed. 1 records saved. attempt=1",
-    "id": 2365,
-    "job_name": "kma_daily",
-    "rows_inserted": 1,
-    "started_at": "2026-08-14T16:13:40.428546+09:00",
     "status": "SUCCESS"
   }
 ]
