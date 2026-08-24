@@ -1,5 +1,35 @@
 [
   {
+    "created_at": "2026-08-24T15:09:08.609171+09:00",
+    "ended_at": "2026-08-24T15:09:08.156547+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=2",
+    "id": 3002,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "started_at": "2026-08-24T15:09:07.862070+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "created_at": "2026-08-24T15:04:07.721106+09:00",
+    "ended_at": "2026-08-24T15:04:07.165055+09:00",
+    "error_message": "HTTPSConnectionPool(host='apihub.kma.go.kr', port=443): Read timed out. (read timeout=20) attempt=1",
+    "id": 3001,
+    "job_name": "kma_hourly",
+    "rows_inserted": 0,
+    "started_at": "2026-08-24T15:03:46.881972+09:00",
+    "status": "FAILED"
+  },
+  {
+    "created_at": "2026-08-24T15:03:46.768516+09:00",
+    "ended_at": "2026-08-24T15:03:46.352025+09:00",
+    "error_message": "hourly crawl completed. 80 records saved. attempt=1",
+    "id": 3000,
+    "job_name": "hourly",
+    "rows_inserted": 80,
+    "started_at": "2026-08-24T15:02:51.051215+09:00",
+    "status": "SUCCESS"
+  },
+  {
     "created_at": "2026-08-24T14:11:39.750618+09:00",
     "ended_at": "2026-08-24T14:11:39.393798+09:00",
     "error_message": "kma_hourly crawl completed. 1 records saved. attempt=2",
@@ -467,36 +497,6 @@
     "job_name": "kma_hourly",
     "rows_inserted": 1,
     "started_at": "2026-08-23T21:07:27.881501+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "created_at": "2026-08-23T21:07:27.769622+09:00",
-    "ended_at": "2026-08-23T21:07:27.368685+09:00",
-    "error_message": "hourly crawl completed. 74 records saved. attempt=1",
-    "id": 2952,
-    "job_name": "hourly",
-    "rows_inserted": 74,
-    "started_at": "2026-08-23T21:06:43.117908+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "created_at": "2026-08-23T20:14:14.659735+09:00",
-    "ended_at": "2026-08-23T20:14:14.278814+09:00",
-    "error_message": "kma_daily crawl completed. 1 records saved. attempt=1",
-    "id": 2951,
-    "job_name": "kma_daily",
-    "rows_inserted": 1,
-    "started_at": "2026-08-23T20:14:13.998073+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "created_at": "2026-08-23T20:14:13.926032+09:00",
-    "ended_at": "2026-08-23T20:14:13.574736+09:00",
-    "error_message": "daily crawl completed. 15 records saved. attempt=1",
-    "id": 2950,
-    "job_name": "daily",
-    "rows_inserted": 15,
-    "started_at": "2026-08-23T20:14:04.159290+09:00",
     "status": "SUCCESS"
   }
 ]
