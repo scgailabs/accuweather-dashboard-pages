@@ -1,5 +1,35 @@
 [
   {
+    "created_at": "2026-09-02T01:03:32.079001+09:00",
+    "ended_at": "2026-09-02T01:03:31.616625+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
+    "id": 3541,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "started_at": "2026-09-02T01:03:31.215263+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "created_at": "2026-09-02T01:03:31.104142+09:00",
+    "ended_at": "2026-09-02T01:03:30.634701+09:00",
+    "error_message": "hourly crawl completed. 94 records saved. attempt=1",
+    "id": 3540,
+    "job_name": "hourly",
+    "rows_inserted": 94,
+    "started_at": "2026-09-02T01:02:38.479131+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "created_at": "2026-09-02T00:23:32.526427+09:00",
+    "ended_at": "2026-09-02T00:23:31.986952+09:00",
+    "error_message": "kma_daily crawl completed. 1 records saved. attempt=3",
+    "id": 3539,
+    "job_name": "kma_daily",
+    "rows_inserted": 1,
+    "started_at": "2026-09-02T00:23:31.667736+09:00",
+    "status": "SUCCESS"
+  },
+  {
     "created_at": "2026-09-02T00:18:31.532935+09:00",
     "ended_at": "2026-09-02T00:18:31.159208+09:00",
     "error_message": "Crawl completed but 0 records saved. Possible bot block or selector mismatch. attempt=2",
@@ -467,36 +497,6 @@
     "job_name": "hourly",
     "rows_inserted": 87,
     "started_at": "2026-09-01T08:07:09.076548+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "created_at": "2026-09-01T07:03:19.362470+09:00",
-    "ended_at": "2026-09-01T07:03:18.886609+09:00",
-    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
-    "id": 3491,
-    "job_name": "kma_hourly",
-    "rows_inserted": 1,
-    "started_at": "2026-09-01T07:03:18.520130+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "created_at": "2026-09-01T07:03:18.408528+09:00",
-    "ended_at": "2026-09-01T07:03:17.653993+09:00",
-    "error_message": "hourly crawl completed. 88 records saved. attempt=1",
-    "id": 3490,
-    "job_name": "hourly",
-    "rows_inserted": 88,
-    "started_at": "2026-09-01T07:02:24.985864+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "created_at": "2026-09-01T06:05:11.031922+09:00",
-    "ended_at": "2026-09-01T06:05:10.618776+09:00",
-    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
-    "id": 3489,
-    "job_name": "kma_hourly",
-    "rows_inserted": 1,
-    "started_at": "2026-09-01T06:05:10.270034+09:00",
     "status": "SUCCESS"
   }
 ]
