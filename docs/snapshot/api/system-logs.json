@@ -1,6 +1,32 @@
 [
   {
     "alert_sent": true,
+    "created_at": "2026-09-01T15:07:34.062697+09:00",
+    "duration_seconds": 0.278817,
+    "ended_at": "2026-09-01T15:07:33.634564+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
+    "id": 3512,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "run_id": "44600ce7-a1",
+    "started_at": "2026-09-01T15:07:33.355747+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
+    "created_at": "2026-09-01T15:07:33.243999+09:00",
+    "duration_seconds": 51.2547,
+    "ended_at": "2026-09-01T15:07:32.811972+09:00",
+    "error_message": "hourly crawl completed. 80 records saved. attempt=1",
+    "id": 3511,
+    "job_name": "hourly",
+    "rows_inserted": 80,
+    "run_id": "e9bb9ebd-a1",
+    "started_at": "2026-09-01T15:06:41.557273+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
     "created_at": "2026-09-01T14:04:55.467074+09:00",
     "duration_seconds": 0.3314,
     "ended_at": "2026-09-01T14:04:55.088836+09:00",
@@ -1272,31 +1298,5 @@
     "run_id": "13689e46-a1",
     "started_at": "2026-08-31T01:06:28.551005+09:00",
     "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-08-31T00:23:50.870293+09:00",
-    "duration_seconds": 0.437232,
-    "ended_at": "2026-08-31T00:23:50.464315+09:00",
-    "error_message": "kma_daily crawl completed. 1 records saved. attempt=3",
-    "id": 3412,
-    "job_name": "kma_daily",
-    "rows_inserted": 1,
-    "run_id": "c1c429c5-a3",
-    "started_at": "2026-08-31T00:23:50.027083+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-08-31T00:18:49.888336+09:00",
-    "duration_seconds": 0.411295,
-    "ended_at": "2026-08-31T00:18:49.365655+09:00",
-    "error_message": "Crawl completed but 0 records saved. Possible bot block or selector mismatch. attempt=2",
-    "id": 3411,
-    "job_name": "kma_daily",
-    "rows_inserted": 0,
-    "run_id": "75ee1e3f-a2",
-    "started_at": "2026-08-31T00:18:48.954360+09:00",
-    "status": "NO_DATA"
   }
 ]
