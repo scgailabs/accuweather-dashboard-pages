@@ -1,6 +1,32 @@
 [
   {
     "alert_sent": true,
+    "created_at": "2026-09-04T15:03:47.655204+09:00",
+    "duration_seconds": 0.305265,
+    "ended_at": "2026-09-04T15:03:46.884237+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
+    "id": 3706,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "run_id": "806ae207-a1",
+    "started_at": "2026-09-04T15:03:46.578972+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
+    "created_at": "2026-09-04T15:03:46.467580+09:00",
+    "duration_seconds": 54.016212,
+    "ended_at": "2026-09-04T15:03:46.031027+09:00",
+    "error_message": "hourly crawl completed. 80 records saved. attempt=1",
+    "id": 3705,
+    "job_name": "hourly",
+    "rows_inserted": 80,
+    "run_id": "0993d0ab-a1",
+    "started_at": "2026-09-04T15:02:52.014813+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
     "created_at": "2026-09-04T14:06:42.432909+09:00",
     "duration_seconds": 0.324133,
     "ended_at": "2026-09-04T14:06:42.008049+09:00",
@@ -1272,31 +1298,5 @@
     "run_id": "366763c8-a1",
     "started_at": "2026-09-03T01:07:41.439258+09:00",
     "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-09-03T00:23:21.710363+09:00",
-    "duration_seconds": 0.337142,
-    "ended_at": "2026-09-03T00:23:21.287709+09:00",
-    "error_message": "kma_daily crawl completed. 1 records saved. attempt=3",
-    "id": 3606,
-    "job_name": "kma_daily",
-    "rows_inserted": 1,
-    "run_id": "775967b0-a3",
-    "started_at": "2026-09-03T00:23:20.950567+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-09-03T00:18:20.903365+09:00",
-    "duration_seconds": 0.333583,
-    "ended_at": "2026-09-03T00:18:20.500565+09:00",
-    "error_message": "Crawl completed but 0 records saved. Possible bot block or selector mismatch. attempt=2",
-    "id": 3605,
-    "job_name": "kma_daily",
-    "rows_inserted": 0,
-    "run_id": "517e547b-a2",
-    "started_at": "2026-09-03T00:18:20.166982+09:00",
-    "status": "NO_DATA"
   }
 ]
