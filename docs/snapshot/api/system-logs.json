@@ -1,6 +1,58 @@
 [
   {
     "alert_sent": true,
+    "created_at": "2026-09-06T08:14:02.010213+09:00",
+    "duration_seconds": 0.575325,
+    "ended_at": "2026-09-06T08:14:01.592407+09:00",
+    "error_message": "kma_daily crawl completed. 1 records saved. attempt=1",
+    "id": 3816,
+    "job_name": "kma_daily",
+    "rows_inserted": 1,
+    "run_id": "307d55dc-a1",
+    "started_at": "2026-09-06T08:14:01.017082+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
+    "created_at": "2026-09-06T08:14:00.949048+09:00",
+    "duration_seconds": 10.023074,
+    "ended_at": "2026-09-06T08:14:00.564571+09:00",
+    "error_message": "daily crawl completed. 15 records saved. attempt=1",
+    "id": 3815,
+    "job_name": "daily",
+    "rows_inserted": 15,
+    "run_id": "825b2b32-a1",
+    "started_at": "2026-09-06T08:13:50.541497+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
+    "created_at": "2026-09-06T08:06:41.042374+09:00",
+    "duration_seconds": 0.358015,
+    "ended_at": "2026-09-06T08:06:40.675778+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
+    "id": 3814,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "run_id": "8123487d-a1",
+    "started_at": "2026-09-06T08:06:40.317763+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
+    "created_at": "2026-09-06T08:06:40.183911+09:00",
+    "duration_seconds": 62.01306,
+    "ended_at": "2026-09-06T08:06:39.654660+09:00",
+    "error_message": "hourly crawl completed. 72 records saved. attempt=1",
+    "id": 3813,
+    "job_name": "hourly",
+    "rows_inserted": 72,
+    "run_id": "0e2a4803-a1",
+    "started_at": "2026-09-06T08:05:37.641598+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
     "created_at": "2026-09-06T07:06:40.964623+09:00",
     "duration_seconds": 0.322806,
     "ended_at": "2026-09-06T07:06:40.557485+09:00",
@@ -1245,58 +1297,6 @@
     "rows_inserted": 75,
     "run_id": "e68fb149-a1",
     "started_at": "2026-09-04T20:06:22.850100+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-09-04T19:04:49.556431+09:00",
-    "duration_seconds": 0.331691,
-    "ended_at": "2026-09-04T19:04:49.166902+09:00",
-    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
-    "id": 3716,
-    "job_name": "kma_hourly",
-    "rows_inserted": 1,
-    "run_id": "73367da0-a1",
-    "started_at": "2026-09-04T19:04:48.835211+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-09-04T19:04:48.718847+09:00",
-    "duration_seconds": 52.587463,
-    "ended_at": "2026-09-04T19:04:48.302087+09:00",
-    "error_message": "hourly crawl completed. 76 records saved. attempt=1",
-    "id": 3715,
-    "job_name": "hourly",
-    "rows_inserted": 76,
-    "run_id": "b6e45c99-a1",
-    "started_at": "2026-09-04T19:03:55.714624+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-09-04T18:07:29.481053+09:00",
-    "duration_seconds": 0.345948,
-    "ended_at": "2026-09-04T18:07:28.889285+09:00",
-    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
-    "id": 3714,
-    "job_name": "kma_hourly",
-    "rows_inserted": 1,
-    "run_id": "6e47df6e-a1",
-    "started_at": "2026-09-04T18:07:28.543337+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-09-04T18:07:28.425549+09:00",
-    "duration_seconds": 48.7773,
-    "ended_at": "2026-09-04T18:07:27.786583+09:00",
-    "error_message": "hourly crawl completed. 77 records saved. attempt=1",
-    "id": 3713,
-    "job_name": "hourly",
-    "rows_inserted": 77,
-    "run_id": "681411a6-a1",
-    "started_at": "2026-09-04T18:06:39.009282+09:00",
     "status": "SUCCESS"
   }
 ]
