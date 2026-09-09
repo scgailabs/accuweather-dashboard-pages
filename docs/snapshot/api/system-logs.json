@@ -1,6 +1,32 @@
 [
   {
     "alert_sent": true,
+    "created_at": "2026-09-09T15:03:47.456988+09:00",
+    "duration_seconds": 0.44238,
+    "ended_at": "2026-09-09T15:03:47.057737+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
+    "id": 4023,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "run_id": "178d96cb-a1",
+    "started_at": "2026-09-09T15:03:46.615357+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
+    "created_at": "2026-09-09T15:03:46.497415+09:00",
+    "duration_seconds": 53.50038,
+    "ended_at": "2026-09-09T15:03:45.844141+09:00",
+    "error_message": "hourly crawl completed. 80 records saved. attempt=1",
+    "id": 4022,
+    "job_name": "hourly",
+    "rows_inserted": 80,
+    "run_id": "7b788a85-a1",
+    "started_at": "2026-09-09T15:02:52.343761+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
     "created_at": "2026-09-09T14:07:32.562912+09:00",
     "duration_seconds": 0.416504,
     "ended_at": "2026-09-09T14:07:31.972818+09:00",
@@ -1272,31 +1298,5 @@
     "run_id": "3ab0752f-a1",
     "started_at": "2026-09-08T01:02:19.507098+09:00",
     "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-09-08T00:23:38.851337+09:00",
-    "duration_seconds": 0.400804,
-    "ended_at": "2026-09-08T00:23:38.429510+09:00",
-    "error_message": "kma_daily crawl completed. 1 records saved. attempt=3",
-    "id": 3923,
-    "job_name": "kma_daily",
-    "rows_inserted": 1,
-    "run_id": "ac173c57-a3",
-    "started_at": "2026-09-08T00:23:38.028706+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-09-08T00:18:37.889887+09:00",
-    "duration_seconds": 0.383545,
-    "ended_at": "2026-09-08T00:18:37.473925+09:00",
-    "error_message": "Crawl completed but 0 records saved. Possible bot block or selector mismatch. attempt=2",
-    "id": 3922,
-    "job_name": "kma_daily",
-    "rows_inserted": 0,
-    "run_id": "699012b1-a2",
-    "started_at": "2026-09-08T00:18:37.090380+09:00",
-    "status": "NO_DATA"
   }
 ]
