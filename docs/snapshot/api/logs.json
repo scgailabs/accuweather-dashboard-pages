@@ -1,5 +1,35 @@
 [
   {
+    "created_at": "2026-09-12T18:10:42.596171+09:00",
+    "ended_at": "2026-09-12T18:10:42.110807+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=2",
+    "id": 4225,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "started_at": "2026-09-12T18:10:41.776705+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "created_at": "2026-09-12T18:05:41.637796+09:00",
+    "ended_at": "2026-09-12T18:05:41.177098+09:00",
+    "error_message": "500 Server Error: Internal Server Error for url: https://apihub.kma.go.kr/api/typ01/url/kma_sfctm2.php?tm=&stn=108&authKey=[redacted] attempt=1",
+    "id": 4224,
+    "job_name": "kma_hourly",
+    "rows_inserted": 0,
+    "started_at": "2026-09-12T18:05:40.901821+09:00",
+    "status": "FAILED"
+  },
+  {
+    "created_at": "2026-09-12T18:05:40.775103+09:00",
+    "ended_at": "2026-09-12T18:05:40.347063+09:00",
+    "error_message": "hourly crawl completed. 77 records saved. attempt=1",
+    "id": 4223,
+    "job_name": "hourly",
+    "rows_inserted": 77,
+    "started_at": "2026-09-12T18:04:51.539805+09:00",
+    "status": "SUCCESS"
+  },
+  {
     "created_at": "2026-09-12T17:03:04.433801+09:00",
     "ended_at": "2026-09-12T17:03:04.028256+09:00",
     "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
@@ -467,36 +497,6 @@
     "job_name": "kma_hourly",
     "rows_inserted": 1,
     "started_at": "2026-09-12T00:06:34.682781+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "created_at": "2026-09-12T00:06:34.563473+09:00",
-    "ended_at": "2026-09-12T00:06:34.147105+09:00",
-    "error_message": "hourly crawl completed. 95 records saved. attempt=1",
-    "id": 4175,
-    "job_name": "hourly",
-    "rows_inserted": 95,
-    "started_at": "2026-09-12T00:05:48.205447+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "created_at": "2026-09-11T23:30:59.362104+09:00",
-    "ended_at": "2026-09-11T23:30:58.948982+09:00",
-    "error_message": "monthly crawl completed. 91 records saved. attempt=1",
-    "id": 4174,
-    "job_name": "monthly",
-    "rows_inserted": 91,
-    "started_at": "2026-09-11T23:30:00.034139+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "created_at": "2026-09-11T23:05:55.494127+09:00",
-    "ended_at": "2026-09-11T23:05:55.060055+09:00",
-    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
-    "id": 4173,
-    "job_name": "kma_hourly",
-    "rows_inserted": 1,
-    "started_at": "2026-09-11T23:05:54.758087+09:00",
     "status": "SUCCESS"
   }
 ]

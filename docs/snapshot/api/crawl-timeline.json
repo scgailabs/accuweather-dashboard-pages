@@ -3,26 +3,6 @@
     "cnt": 1,
     "job_name": "hourly",
     "last_error": null,
-    "last_event_at": "2026-09-05T18:05:22.454466+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-09-05T18:00:00+09:00",
-    "total_rows": 77
-  },
-  {
-    "cnt": 1,
-    "job_name": "kma_hourly",
-    "last_error": null,
-    "last_event_at": "2026-09-05T18:05:23.404013+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-09-05T18:00:00+09:00",
-    "total_rows": 1
-  },
-  {
-    "cnt": 1,
-    "job_name": "hourly",
-    "last_error": null,
     "last_event_at": "2026-09-05T19:05:32.766439+09:00",
     "status": "SUCCESS",
     "target_range_sample": null,
@@ -4267,6 +4247,26 @@
     "status": "SUCCESS",
     "target_range_sample": null,
     "time_slot": "2026-09-12T17:00:00+09:00",
+    "total_rows": 1
+  },
+  {
+    "cnt": 1,
+    "job_name": "hourly",
+    "last_error": null,
+    "last_event_at": "2026-09-12T18:05:40.775103+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-09-12T18:00:00+09:00",
+    "total_rows": 77
+  },
+  {
+    "cnt": 2,
+    "job_name": "kma_hourly",
+    "last_error": "500 Server Error: Internal Server Error for url: https://apihub.kma.go.kr/api/typ01/url/kma_sfctm2.php?tm=&stn=108&authKey=[redacted] attempt=1",
+    "last_event_at": "2026-09-12T18:10:42.596171+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-09-12T18:00:00+09:00",
     "total_rows": 1
   }
 ]
