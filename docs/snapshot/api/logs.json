@@ -1,5 +1,25 @@
 [
   {
+    "created_at": "2026-09-14T06:08:04.981636+09:00",
+    "ended_at": "2026-09-14T06:08:04.434700+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
+    "id": 4322,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "started_at": "2026-09-14T06:08:04.139172+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "created_at": "2026-09-14T06:08:04.007119+09:00",
+    "ended_at": "2026-09-14T06:08:03.564890+09:00",
+    "error_message": "hourly crawl completed. 89 records saved. attempt=1",
+    "id": 4321,
+    "job_name": "hourly",
+    "rows_inserted": 89,
+    "started_at": "2026-09-14T06:07:16.010200+09:00",
+    "status": "SUCCESS"
+  },
+  {
     "created_at": "2026-09-14T05:05:23.384363+09:00",
     "ended_at": "2026-09-14T05:05:22.988918+09:00",
     "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
@@ -477,26 +497,6 @@
     "job_name": "kma_hourly",
     "rows_inserted": 1,
     "started_at": "2026-09-13T12:10:10.834683+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "created_at": "2026-09-13T12:05:10.698299+09:00",
-    "ended_at": "2026-09-13T12:05:10.295601+09:00",
-    "error_message": "HTTPSConnectionPool(host='apihub.kma.go.kr', port=443): Read timed out. (read timeout=20) attempt=1",
-    "id": 4272,
-    "job_name": "kma_hourly",
-    "rows_inserted": 0,
-    "started_at": "2026-09-13T12:04:50.058321+09:00",
-    "status": "FAILED"
-  },
-  {
-    "created_at": "2026-09-13T12:04:49.943077+09:00",
-    "ended_at": "2026-09-13T12:04:49.489509+09:00",
-    "error_message": "hourly crawl completed. 83 records saved. attempt=1",
-    "id": 4271,
-    "job_name": "hourly",
-    "rows_inserted": 83,
-    "started_at": "2026-09-13T12:03:53.214964+09:00",
     "status": "SUCCESS"
   }
 ]
