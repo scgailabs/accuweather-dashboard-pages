@@ -4,28 +4,28 @@
     {
       "detail": "",
       "job_name": "daily",
-      "last_seen_at": "2026-09-13T08:13:29.320841+09:00",
+      "last_seen_at": "2026-09-13T12:12:19.598920+09:00",
       "service_name": "accuweather-crawler",
       "status": "IDLE"
     },
     {
       "detail": "",
       "job_name": "hourly",
-      "last_seen_at": "2026-09-13T11:02:53.082211+09:00",
+      "last_seen_at": "2026-09-13T12:04:49.951910+09:00",
       "service_name": "accuweather-crawler",
       "status": "IDLE"
     },
     {
       "detail": "",
       "job_name": "kma_daily",
-      "last_seen_at": "2026-09-13T08:13:30.127725+09:00",
+      "last_seen_at": "2026-09-13T12:12:20.563553+09:00",
       "service_name": "accuweather-crawler",
       "status": "IDLE"
     },
     {
       "detail": "",
       "job_name": "kma_hourly",
-      "last_seen_at": "2026-09-13T11:02:53.930998+09:00",
+      "last_seen_at": "2026-09-13T12:10:11.580520+09:00",
       "service_name": "accuweather-crawler",
       "status": "IDLE"
     },
@@ -39,16 +39,16 @@
   ],
   "last_collection": {
     "daily": {
-      "last": "2026-09-13T08:13:28.557086+09:00"
+      "last": "2026-09-13T12:12:18.785692+09:00"
     },
     "hourly": {
-      "last": "2026-09-13T11:02:45.526309+09:00"
+      "last": "2026-09-13T12:04:41.687209+09:00"
     },
     "kma_daily": {
-      "last": "2026-09-13T08:13:29.750024+09:00"
+      "last": "2026-09-13T12:12:20.004750+09:00"
     },
     "kma_hourly": {
-      "last": "2026-09-13T11:02:53.510993+09:00"
+      "last": "2026-09-13T12:10:11.098152+09:00"
     },
     "monthly": {
       "last": "2026-09-12T23:30:00.449138+09:00"
@@ -58,22 +58,22 @@
     "daily": {
       "job_name": "daily",
       "last_rows": 15,
-      "last_success_at": "2026-09-13T08:13:29.311761+09:00"
+      "last_success_at": "2026-09-13T12:12:19.590506+09:00"
     },
     "hourly": {
       "job_name": "hourly",
       "last_rows": 96,
-      "last_success_at": "2026-09-13T11:02:53.073149+09:00"
+      "last_success_at": "2026-09-13T12:04:49.943077+09:00"
     },
     "kma_daily": {
       "job_name": "kma_daily",
       "last_rows": 1,
-      "last_success_at": "2026-09-13T08:13:30.119819+09:00"
+      "last_success_at": "2026-09-13T12:12:20.555334+09:00"
     },
     "kma_hourly": {
       "job_name": "kma_hourly",
       "last_rows": 1,
-      "last_success_at": "2026-09-13T11:02:53.923413+09:00"
+      "last_success_at": "2026-09-13T12:10:11.570842+09:00"
     },
     "monthly": {
       "job_name": "monthly",
@@ -81,5 +81,7 @@
       "last_success_at": "2026-09-12T23:30:58.801610+09:00"
     }
   },
-  "recent_failures": {}
+  "recent_failures": {
+    "kma_hourly": 1
+  }
 }
