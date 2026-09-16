@@ -1,6 +1,32 @@
 [
   {
     "alert_sent": true,
+    "created_at": "2026-09-16T15:03:41.083452+09:00",
+    "duration_seconds": 0.352395,
+    "ended_at": "2026-09-16T15:03:40.169922+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
+    "id": 4471,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "run_id": "feb3d1ac-a1",
+    "started_at": "2026-09-16T15:03:39.817527+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
+    "created_at": "2026-09-16T15:03:39.693925+09:00",
+    "duration_seconds": 51.030518,
+    "ended_at": "2026-09-16T15:03:39.020902+09:00",
+    "error_message": "hourly crawl completed. 80 records saved. attempt=1",
+    "id": 4470,
+    "job_name": "hourly",
+    "rows_inserted": 80,
+    "run_id": "93ac54c5-a1",
+    "started_at": "2026-09-16T15:02:47.990384+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
     "created_at": "2026-09-16T14:05:49.376111+09:00",
     "duration_seconds": 0.33887,
     "ended_at": "2026-09-16T14:05:48.443582+09:00",
@@ -1272,31 +1298,5 @@
     "run_id": "8cfb9e41-a1",
     "started_at": "2026-09-15T01:07:51.590255+09:00",
     "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-09-15T00:22:46.846877+09:00",
-    "duration_seconds": 0.341508,
-    "ended_at": "2026-09-15T00:22:46.443673+09:00",
-    "error_message": "kma_daily crawl completed. 1 records saved. attempt=3",
-    "id": 4371,
-    "job_name": "kma_daily",
-    "rows_inserted": 1,
-    "run_id": "5f4e17f2-a3",
-    "started_at": "2026-09-15T00:22:46.102165+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-09-15T00:17:45.965586+09:00",
-    "duration_seconds": 0.297537,
-    "ended_at": "2026-09-15T00:17:45.424559+09:00",
-    "error_message": "Crawl completed but 0 records saved. Possible bot block or selector mismatch. attempt=2",
-    "id": 4370,
-    "job_name": "kma_daily",
-    "rows_inserted": 0,
-    "run_id": "e48c0184-a2",
-    "started_at": "2026-09-15T00:17:45.127022+09:00",
-    "status": "NO_DATA"
   }
 ]
