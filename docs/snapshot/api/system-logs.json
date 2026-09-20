@@ -1,6 +1,32 @@
 [
   {
     "alert_sent": true,
+    "created_at": "2026-09-20T15:06:21.642320+09:00",
+    "duration_seconds": 0.389027,
+    "ended_at": "2026-09-20T15:06:21.197844+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
+    "id": 4734,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "run_id": "edb061fd-a1",
+    "started_at": "2026-09-20T15:06:20.808817+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
+    "created_at": "2026-09-20T15:06:20.701041+09:00",
+    "duration_seconds": 45.431187,
+    "ended_at": "2026-09-20T15:06:20.293347+09:00",
+    "error_message": "hourly crawl completed. 80 records saved. attempt=1",
+    "id": 4733,
+    "job_name": "hourly",
+    "rows_inserted": 80,
+    "run_id": "453f01b8-a1",
+    "started_at": "2026-09-20T15:05:34.862160+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
     "created_at": "2026-09-20T14:06:16.987801+09:00",
     "duration_seconds": 0.324672,
     "ended_at": "2026-09-20T14:06:16.588273+09:00",
@@ -1272,31 +1298,5 @@
     "run_id": "aff8340c-a1",
     "started_at": "2026-09-19T04:12:54.004095+09:00",
     "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-09-19T04:08:55.085272+09:00",
-    "duration_seconds": 20.257406,
-    "ended_at": "2026-09-19T04:08:54.718343+09:00",
-    "error_message": "HTTPSConnectionPool(host='apihub.kma.go.kr', port=443): Read timed out. (read timeout=20) attempt=2",
-    "id": 4634,
-    "job_name": "kma_hourly",
-    "rows_inserted": 0,
-    "run_id": "23426f4c-a2",
-    "started_at": "2026-09-19T04:08:34.460937+09:00",
-    "status": "FAILED"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-09-19T04:03:34.323553+09:00",
-    "duration_seconds": 20.209858,
-    "ended_at": "2026-09-19T04:03:33.965432+09:00",
-    "error_message": "HTTPSConnectionPool(host='apihub.kma.go.kr', port=443): Read timed out. (read timeout=20) attempt=1",
-    "id": 4633,
-    "job_name": "kma_hourly",
-    "rows_inserted": 0,
-    "run_id": "0b9c2201-a1",
-    "started_at": "2026-09-19T04:03:13.755574+09:00",
-    "status": "FAILED"
   }
 ]
