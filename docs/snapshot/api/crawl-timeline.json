@@ -1,36 +1,6 @@
 [
   {
     "cnt": 1,
-    "job_name": "kma_daily",
-    "last_error": null,
-    "last_event_at": "2026-09-15T00:22:46.846877+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-09-15T00:00:00+09:00",
-    "total_rows": 1
-  },
-  {
-    "cnt": 1,
-    "job_name": "hourly",
-    "last_error": null,
-    "last_event_at": "2026-09-15T01:08:39.035560+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-09-15T01:00:00+09:00",
-    "total_rows": 94
-  },
-  {
-    "cnt": 1,
-    "job_name": "kma_hourly",
-    "last_error": null,
-    "last_event_at": "2026-09-15T01:08:39.923904+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-09-15T01:00:00+09:00",
-    "total_rows": 1
-  },
-  {
-    "cnt": 1,
     "job_name": "hourly",
     "last_error": null,
     "last_event_at": "2026-09-15T02:07:12.253908+09:00",
@@ -4260,14 +4230,14 @@
     "total_rows": 95
   },
   {
-    "cnt": 2,
+    "cnt": 3,
     "job_name": "kma_daily",
     "last_error": "HTTPSConnectionPool(host='apihub.kma.go.kr', port=443): Read timed out. (read timeout=20) attempt=1",
-    "last_event_at": "2026-09-22T00:18:14.747300+09:00",
-    "status": "NO_DATA",
+    "last_event_at": "2026-09-22T00:23:16.184039+09:00",
+    "status": "SUCCESS",
     "target_range_sample": null,
     "time_slot": "2026-09-22T00:00:00+09:00",
-    "total_rows": 0
+    "total_rows": 1
   },
   {
     "cnt": 1,
@@ -4277,6 +4247,26 @@
     "status": "SUCCESS",
     "target_range_sample": null,
     "time_slot": "2026-09-22T00:00:00+09:00",
+    "total_rows": 1
+  },
+  {
+    "cnt": 1,
+    "job_name": "hourly",
+    "last_error": null,
+    "last_event_at": "2026-09-22T01:03:51.713325+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-09-22T01:00:00+09:00",
+    "total_rows": 94
+  },
+  {
+    "cnt": 2,
+    "job_name": "kma_hourly",
+    "last_error": "Crawl completed but 0 records saved. Possible bot block or selector mismatch. attempt=1",
+    "last_event_at": "2026-09-22T01:08:53.514221+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-09-22T01:00:00+09:00",
     "total_rows": 1
   }
 ]
