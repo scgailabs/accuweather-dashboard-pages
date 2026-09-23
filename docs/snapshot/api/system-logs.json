@@ -1,6 +1,45 @@
 [
   {
     "alert_sent": true,
+    "created_at": "2026-09-24T07:11:25.823259+09:00",
+    "duration_seconds": 0.335045,
+    "ended_at": "2026-09-24T07:11:25.413370+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=2",
+    "id": 4980,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "run_id": "5a3e2b41-a2",
+    "started_at": "2026-09-24T07:11:25.078325+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
+    "created_at": "2026-09-24T07:06:24.951200+09:00",
+    "duration_seconds": 20.15277,
+    "ended_at": "2026-09-24T07:06:23.904415+09:00",
+    "error_message": "HTTPSConnectionPool(host='apihub.kma.go.kr', port=443): Read timed out. (read timeout=20) attempt=1",
+    "id": 4979,
+    "job_name": "kma_hourly",
+    "rows_inserted": 0,
+    "run_id": "505b69d5-a1",
+    "started_at": "2026-09-24T07:06:03.751645+09:00",
+    "status": "FAILED"
+  },
+  {
+    "alert_sent": true,
+    "created_at": "2026-09-24T07:06:03.639453+09:00",
+    "duration_seconds": 52.263363,
+    "ended_at": "2026-09-24T07:06:03.236966+09:00",
+    "error_message": "hourly crawl completed. 88 records saved. attempt=1",
+    "id": 4978,
+    "job_name": "hourly",
+    "rows_inserted": 88,
+    "run_id": "db52d072-a1",
+    "started_at": "2026-09-24T07:05:10.973603+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
     "created_at": "2026-09-24T06:04:54.754772+09:00",
     "duration_seconds": 0.287125,
     "ended_at": "2026-09-24T06:04:54.393772+09:00",
@@ -1258,45 +1297,6 @@
     "rows_inserted": 1,
     "run_id": "40e4ab30-a1",
     "started_at": "2026-09-22T19:06:30.619234+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-09-22T19:06:30.501186+09:00",
-    "duration_seconds": 52.203808,
-    "ended_at": "2026-09-22T19:06:30.046982+09:00",
-    "error_message": "hourly crawl completed. 76 records saved. attempt=1",
-    "id": 4880,
-    "job_name": "hourly",
-    "rows_inserted": 76,
-    "run_id": "c344d57a-a1",
-    "started_at": "2026-09-22T19:05:37.843173+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-09-22T18:04:46.016730+09:00",
-    "duration_seconds": 0.221424,
-    "ended_at": "2026-09-22T18:04:45.590324+09:00",
-    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
-    "id": 4879,
-    "job_name": "kma_hourly",
-    "rows_inserted": 1,
-    "run_id": "4816f6a6-a1",
-    "started_at": "2026-09-22T18:04:45.368900+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-09-22T18:04:45.262700+09:00",
-    "duration_seconds": 51.731995,
-    "ended_at": "2026-09-22T18:04:44.893379+09:00",
-    "error_message": "hourly crawl completed. 77 records saved. attempt=1",
-    "id": 4878,
-    "job_name": "hourly",
-    "rows_inserted": 77,
-    "run_id": "d45e967e-a1",
-    "started_at": "2026-09-22T18:03:53.161386+09:00",
     "status": "SUCCESS"
   }
 ]
