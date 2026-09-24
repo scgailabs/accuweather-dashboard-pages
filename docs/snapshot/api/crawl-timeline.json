@@ -1,46 +1,6 @@
 [
   {
     "cnt": 1,
-    "job_name": "daily",
-    "last_error": null,
-    "last_event_at": "2026-09-17T20:13:35.262341+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-09-17T20:00:00+09:00",
-    "total_rows": 15
-  },
-  {
-    "cnt": 1,
-    "job_name": "hourly",
-    "last_error": null,
-    "last_event_at": "2026-09-17T20:03:23.679734+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-09-17T20:00:00+09:00",
-    "total_rows": 75
-  },
-  {
-    "cnt": 1,
-    "job_name": "kma_daily",
-    "last_error": null,
-    "last_event_at": "2026-09-17T20:13:36.176206+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-09-17T20:00:00+09:00",
-    "total_rows": 1
-  },
-  {
-    "cnt": 1,
-    "job_name": "kma_hourly",
-    "last_error": null,
-    "last_event_at": "2026-09-17T20:03:24.849977+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-09-17T20:00:00+09:00",
-    "total_rows": 1
-  },
-  {
-    "cnt": 1,
     "job_name": "hourly",
     "last_error": null,
     "last_event_at": "2026-09-17T21:05:23.415863+09:00",
@@ -4267,6 +4227,46 @@
     "status": "SUCCESS",
     "target_range_sample": null,
     "time_slot": "2026-09-24T19:00:00+09:00",
+    "total_rows": 1
+  },
+  {
+    "cnt": 1,
+    "job_name": "daily",
+    "last_error": null,
+    "last_event_at": "2026-09-24T20:12:14.893448+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-09-24T20:00:00+09:00",
+    "total_rows": 15
+  },
+  {
+    "cnt": 1,
+    "job_name": "hourly",
+    "last_error": null,
+    "last_event_at": "2026-09-24T20:03:21.339830+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-09-24T20:00:00+09:00",
+    "total_rows": 75
+  },
+  {
+    "cnt": 1,
+    "job_name": "kma_daily",
+    "last_error": null,
+    "last_event_at": "2026-09-24T20:12:15.665958+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-09-24T20:00:00+09:00",
+    "total_rows": 1
+  },
+  {
+    "cnt": 2,
+    "job_name": "kma_hourly",
+    "last_error": "HTTPSConnectionPool(host='apihub.kma.go.kr', port=443): Read timed out. (read timeout=20) attempt=1",
+    "last_event_at": "2026-09-24T20:08:43.040444+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-09-24T20:00:00+09:00",
     "total_rows": 1
   }
 ]
