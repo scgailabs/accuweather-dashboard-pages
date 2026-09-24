@@ -1,36 +1,6 @@
 [
   {
     "cnt": 1,
-    "job_name": "kma_daily",
-    "last_error": null,
-    "last_event_at": "2026-09-18T00:22:59.993559+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-09-18T00:00:00+09:00",
-    "total_rows": 1
-  },
-  {
-    "cnt": 1,
-    "job_name": "hourly",
-    "last_error": null,
-    "last_event_at": "2026-09-18T01:03:24.793870+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-09-18T01:00:00+09:00",
-    "total_rows": 94
-  },
-  {
-    "cnt": 1,
-    "job_name": "kma_hourly",
-    "last_error": null,
-    "last_event_at": "2026-09-18T01:03:25.575541+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-09-18T01:00:00+09:00",
-    "total_rows": 1
-  },
-  {
-    "cnt": 1,
     "job_name": "hourly",
     "last_error": null,
     "last_event_at": "2026-09-18T02:04:55.710731+09:00",
@@ -4260,14 +4230,14 @@
     "total_rows": 95
   },
   {
-    "cnt": 2,
+    "cnt": 3,
     "job_name": "kma_daily",
     "last_error": "Crawl completed but 0 records saved. Possible bot block or selector mismatch. attempt=2",
-    "last_event_at": "2026-09-25T00:17:37.060536+09:00",
-    "status": "NO_DATA",
+    "last_event_at": "2026-09-25T00:22:38.955327+09:00",
+    "status": "SUCCESS",
     "target_range_sample": null,
     "time_slot": "2026-09-25T00:00:00+09:00",
-    "total_rows": 0
+    "total_rows": 1
   },
   {
     "cnt": 1,
@@ -4277,6 +4247,26 @@
     "status": "SUCCESS",
     "target_range_sample": null,
     "time_slot": "2026-09-25T00:00:00+09:00",
+    "total_rows": 1
+  },
+  {
+    "cnt": 1,
+    "job_name": "hourly",
+    "last_error": null,
+    "last_event_at": "2026-09-25T01:05:32.180813+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-09-25T01:00:00+09:00",
+    "total_rows": 94
+  },
+  {
+    "cnt": 3,
+    "job_name": "kma_hourly",
+    "last_error": "HTTPSConnectionPool(host='apihub.kma.go.kr', port=443): Read timed out. (read timeout=20) attempt=2",
+    "last_event_at": "2026-09-25T01:16:14.766613+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-09-25T01:00:00+09:00",
     "total_rows": 1
   }
 ]
