@@ -1,46 +1,6 @@
 [
   {
     "cnt": 1,
-    "job_name": "daily",
-    "last_error": null,
-    "last_event_at": "2026-09-19T04:13:02.757283+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-09-19T04:00:00+09:00",
-    "total_rows": 15
-  },
-  {
-    "cnt": 1,
-    "job_name": "hourly",
-    "last_error": null,
-    "last_event_at": "2026-09-19T04:03:13.639726+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-09-19T04:00:00+09:00",
-    "total_rows": 91
-  },
-  {
-    "cnt": 1,
-    "job_name": "kma_daily",
-    "last_error": null,
-    "last_event_at": "2026-09-19T04:13:03.590676+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-09-19T04:00:00+09:00",
-    "total_rows": 1
-  },
-  {
-    "cnt": 3,
-    "job_name": "kma_hourly",
-    "last_error": "HTTPSConnectionPool(host='apihub.kma.go.kr', port=443): Read timed out. (read timeout=20) attempt=2",
-    "last_event_at": "2026-09-19T04:13:55.876805+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-09-19T04:00:00+09:00",
-    "total_rows": 1
-  },
-  {
-    "cnt": 1,
     "job_name": "hourly",
     "last_error": null,
     "last_event_at": "2026-09-19T05:04:49.517166+09:00",
@@ -4267,6 +4227,46 @@
     "status": "SUCCESS",
     "target_range_sample": null,
     "time_slot": "2026-09-26T03:00:00+09:00",
+    "total_rows": 1
+  },
+  {
+    "cnt": 1,
+    "job_name": "daily",
+    "last_error": null,
+    "last_event_at": "2026-09-26T04:13:17.912667+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-09-26T04:00:00+09:00",
+    "total_rows": 15
+  },
+  {
+    "cnt": 1,
+    "job_name": "hourly",
+    "last_error": null,
+    "last_event_at": "2026-09-26T04:04:38.668581+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-09-26T04:00:00+09:00",
+    "total_rows": 91
+  },
+  {
+    "cnt": 1,
+    "job_name": "kma_daily",
+    "last_error": null,
+    "last_event_at": "2026-09-26T04:13:19.743199+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-09-26T04:00:00+09:00",
+    "total_rows": 1
+  },
+  {
+    "cnt": 1,
+    "job_name": "kma_hourly",
+    "last_error": null,
+    "last_event_at": "2026-09-26T04:04:39.502414+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-09-26T04:00:00+09:00",
     "total_rows": 1
   }
 ]
