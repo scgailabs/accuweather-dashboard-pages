@@ -1,6 +1,32 @@
 [
   {
     "alert_sent": true,
+    "created_at": "2026-09-25T10:05:26.116147+09:00",
+    "duration_seconds": 0.336167,
+    "ended_at": "2026-09-25T10:05:25.691035+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
+    "id": 5061,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "run_id": "e46a6aa7-a1",
+    "started_at": "2026-09-25T10:05:25.354868+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
+    "created_at": "2026-09-25T10:05:25.251538+09:00",
+    "duration_seconds": 54.74204,
+    "ended_at": "2026-09-25T10:05:24.892142+09:00",
+    "error_message": "hourly crawl completed. 85 records saved. attempt=1",
+    "id": 5060,
+    "job_name": "hourly",
+    "rows_inserted": 85,
+    "run_id": "83a9dd93-a1",
+    "started_at": "2026-09-25T10:04:30.150102+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
     "created_at": "2026-09-25T09:09:45.338150+09:00",
     "duration_seconds": 0.354981,
     "ended_at": "2026-09-25T09:09:44.961619+09:00",
@@ -1272,31 +1298,5 @@
     "run_id": "35b5e87c-a3",
     "started_at": "2026-09-24T00:24:02.586207+09:00",
     "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-09-24T00:19:02.533517+09:00",
-    "duration_seconds": 20.240046,
-    "ended_at": "2026-09-24T00:19:02.143356+09:00",
-    "error_message": "HTTPSConnectionPool(host='apihub.kma.go.kr', port=443): Read timed out. (read timeout=20) attempt=2",
-    "id": 4961,
-    "job_name": "kma_daily",
-    "rows_inserted": 0,
-    "run_id": "ac9f2eae-a2",
-    "started_at": "2026-09-24T00:18:41.903310+09:00",
-    "status": "FAILED"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-09-24T00:13:41.768388+09:00",
-    "duration_seconds": 0.311483,
-    "ended_at": "2026-09-24T00:13:41.396717+09:00",
-    "error_message": "Crawl completed but 0 records saved. Possible bot block or selector mismatch. attempt=1",
-    "id": 4960,
-    "job_name": "kma_daily",
-    "rows_inserted": 0,
-    "run_id": "8a48a86e-a1",
-    "started_at": "2026-09-24T00:13:41.085234+09:00",
-    "status": "NO_DATA"
   }
 ]
