@@ -11,21 +11,21 @@
     {
       "detail": "",
       "job_name": "hourly",
-      "last_seen_at": "2026-09-28T00:03:08.114153+09:00",
+      "last_seen_at": "2026-09-28T01:06:40.918529+09:00",
       "service_name": "accuweather-crawler",
       "status": "IDLE"
     },
     {
-      "detail": "",
+      "detail": "HTTPSConnectionPool(host='apihub.kma.go.kr', port=443): Read timed out. (read timeout=20)",
       "job_name": "kma_daily",
-      "last_seen_at": "2026-09-28T00:17:54.875800+09:00",
+      "last_seen_at": "2026-09-28T00:23:15.751073+09:00",
       "service_name": "accuweather-crawler",
-      "status": "IDLE"
+      "status": "ERROR"
     },
     {
       "detail": "",
       "job_name": "kma_hourly",
-      "last_seen_at": "2026-09-28T00:03:08.902380+09:00",
+      "last_seen_at": "2026-09-28T01:06:41.791195+09:00",
       "service_name": "accuweather-crawler",
       "status": "IDLE"
     },
@@ -42,13 +42,13 @@
       "last": "2026-09-28T00:12:32.736828+09:00"
     },
     "hourly": {
-      "last": "2026-09-28T00:03:02.971637+09:00"
+      "last": "2026-09-28T01:06:34.046318+09:00"
     },
     "kma_daily": {
       "last": "2026-09-27T20:12:26.681253+09:00"
     },
     "kma_hourly": {
-      "last": "2026-09-28T00:03:08.416683+09:00"
+      "last": "2026-09-28T01:06:41.391057+09:00"
     },
     "monthly": {
       "last": "2026-09-27T23:30:00.433200+09:00"
@@ -63,7 +63,7 @@
     "hourly": {
       "job_name": "hourly",
       "last_rows": 96,
-      "last_success_at": "2026-09-28T00:03:08.104938+09:00"
+      "last_success_at": "2026-09-28T01:06:40.909180+09:00"
     },
     "kma_daily": {
       "job_name": "kma_daily",
@@ -73,7 +73,7 @@
     "kma_hourly": {
       "job_name": "kma_hourly",
       "last_rows": 1,
-      "last_success_at": "2026-09-28T00:03:08.894262+09:00"
+      "last_success_at": "2026-09-28T01:06:41.783421+09:00"
     },
     "monthly": {
       "job_name": "monthly",
