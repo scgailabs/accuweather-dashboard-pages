@@ -1,6 +1,72 @@
 [
   {
     "alert_type": "SUCCESS",
+    "created_at": "2026-10-04T04:12:38.428243+09:00",
+    "id": 5723,
+    "job_name": "kma_daily",
+    "message": "Saved 1 records in 0.3s (attempt=1)",
+    "sent_at": "2026-10-04T04:12:38.428243+09:00",
+    "sent_to": "discord",
+    "severity": "INFO",
+    "status": "SENT"
+  },
+  {
+    "alert_type": "SUCCESS",
+    "created_at": "2026-10-04T04:12:37.668073+09:00",
+    "id": 5722,
+    "job_name": "daily",
+    "message": "Saved 15 records in 9.6s (attempt=1)",
+    "sent_at": "2026-10-04T04:12:37.668073+09:00",
+    "sent_to": "discord",
+    "severity": "INFO",
+    "status": "SENT"
+  },
+  {
+    "alert_type": "SUCCESS",
+    "created_at": "2026-10-04T04:09:51.782183+09:00",
+    "id": 5721,
+    "job_name": "kma_hourly",
+    "message": "Saved 1 records in 0.4s (attempt=2)",
+    "sent_at": "2026-10-04T04:09:51.782183+09:00",
+    "sent_to": "discord",
+    "severity": "INFO",
+    "status": "SENT"
+  },
+  {
+    "alert_type": "RECOVERY",
+    "created_at": "2026-10-04T04:09:51.779391+09:00",
+    "id": 5720,
+    "job_name": "kma_hourly",
+    "message": "kma_hourly recovered from failure.",
+    "sent_at": "2026-10-04T04:09:51.779391+09:00",
+    "sent_to": "discord",
+    "severity": "INFO",
+    "status": "SENT"
+  },
+  {
+    "alert_type": "FAILURE",
+    "created_at": "2026-10-04T04:04:50.970900+09:00",
+    "id": 5719,
+    "job_name": "kma_hourly",
+    "message": "HTTPSConnectionPool(host='apihub.kma.go.kr', port=443): Read timed out. (read timeout=20) attempt=1",
+    "sent_at": "2026-10-04T04:04:50.970900+09:00",
+    "sent_to": "discord",
+    "severity": "CRITICAL",
+    "status": "SENT"
+  },
+  {
+    "alert_type": "SUCCESS",
+    "created_at": "2026-10-04T04:04:30.095013+09:00",
+    "id": 5718,
+    "job_name": "hourly",
+    "message": "Saved 91 records in 52.9s (attempt=1)",
+    "sent_at": "2026-10-04T04:04:30.095013+09:00",
+    "sent_to": "discord",
+    "severity": "INFO",
+    "status": "SENT"
+  },
+  {
+    "alert_type": "SUCCESS",
     "created_at": "2026-10-04T03:04:32.312653+09:00",
     "id": 5717,
     "job_name": "kma_hourly",
@@ -479,72 +545,6 @@
     "job_name": "kma_hourly",
     "message": "Saved 1 records in 0.3s (attempt=1)",
     "sent_at": "2026-10-03T11:06:02.849185+09:00",
-    "sent_to": "discord",
-    "severity": "INFO",
-    "status": "SENT"
-  },
-  {
-    "alert_type": "SUCCESS",
-    "created_at": "2026-10-03T11:06:02.022567+09:00",
-    "id": 5673,
-    "job_name": "hourly",
-    "message": "Saved 84 records in 49.4s (attempt=1)",
-    "sent_at": "2026-10-03T11:06:02.022567+09:00",
-    "sent_to": "discord",
-    "severity": "INFO",
-    "status": "SENT"
-  },
-  {
-    "alert_type": "SUCCESS",
-    "created_at": "2026-10-03T10:03:56.776740+09:00",
-    "id": 5672,
-    "job_name": "kma_hourly",
-    "message": "Saved 1 records in 0.4s (attempt=1)",
-    "sent_at": "2026-10-03T10:03:56.776740+09:00",
-    "sent_to": "discord",
-    "severity": "INFO",
-    "status": "SENT"
-  },
-  {
-    "alert_type": "SUCCESS",
-    "created_at": "2026-10-03T10:03:55.941356+09:00",
-    "id": 5671,
-    "job_name": "hourly",
-    "message": "Saved 85 records in 47.3s (attempt=1)",
-    "sent_at": "2026-10-03T10:03:55.941356+09:00",
-    "sent_to": "discord",
-    "severity": "INFO",
-    "status": "SENT"
-  },
-  {
-    "alert_type": "SUCCESS",
-    "created_at": "2026-10-03T09:05:38.940393+09:00",
-    "id": 5670,
-    "job_name": "kma_hourly",
-    "message": "Saved 1 records in 0.3s (attempt=1)",
-    "sent_at": "2026-10-03T09:05:38.940393+09:00",
-    "sent_to": "discord",
-    "severity": "INFO",
-    "status": "SENT"
-  },
-  {
-    "alert_type": "SUCCESS",
-    "created_at": "2026-10-03T09:05:38.081339+09:00",
-    "id": 5669,
-    "job_name": "hourly",
-    "message": "Saved 86 records in 51.8s (attempt=1)",
-    "sent_at": "2026-10-03T09:05:38.081339+09:00",
-    "sent_to": "discord",
-    "severity": "INFO",
-    "status": "SENT"
-  },
-  {
-    "alert_type": "SUCCESS",
-    "created_at": "2026-10-03T08:12:44.411234+09:00",
-    "id": 5668,
-    "job_name": "kma_daily",
-    "message": "Saved 1 records in 0.4s (attempt=1)",
-    "sent_at": "2026-10-03T08:12:44.411234+09:00",
     "sent_to": "discord",
     "severity": "INFO",
     "status": "SENT"
