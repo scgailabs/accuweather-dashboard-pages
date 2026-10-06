@@ -1,6 +1,32 @@
 [
   {
     "alert_sent": true,
+    "created_at": "2026-10-07T05:06:12.077242+09:00",
+    "duration_seconds": 1.408991,
+    "ended_at": "2026-10-07T05:06:10.968692+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
+    "id": 5855,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "run_id": "0c11005f-a1",
+    "started_at": "2026-10-07T05:06:09.559701+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
+    "created_at": "2026-10-07T05:06:09.432657+09:00",
+    "duration_seconds": 49.207283,
+    "ended_at": "2026-10-07T05:06:09.042649+09:00",
+    "error_message": "hourly crawl completed. 90 records saved. attempt=1",
+    "id": 5854,
+    "job_name": "hourly",
+    "rows_inserted": 90,
+    "run_id": "204b1a39-a1",
+    "started_at": "2026-10-07T05:05:19.835366+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
     "created_at": "2026-10-07T04:15:02.935606+09:00",
     "duration_seconds": 0.622563,
     "ended_at": "2026-10-07T04:15:02.497535+09:00",
@@ -1271,32 +1297,6 @@
     "rows_inserted": 1,
     "run_id": "041d9650-a2",
     "started_at": "2026-10-05T19:11:34.316993+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-10-05T19:06:34.175871+09:00",
-    "duration_seconds": 20.234245,
-    "ended_at": "2026-10-05T19:06:33.809711+09:00",
-    "error_message": "HTTPSConnectionPool(host='apihub.kma.go.kr', port=443): Read timed out. (read timeout=20) attempt=1",
-    "id": 5755,
-    "job_name": "kma_hourly",
-    "rows_inserted": 0,
-    "run_id": "2f5c8990-a1",
-    "started_at": "2026-10-05T19:06:13.575465+09:00",
-    "status": "FAILED"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-10-05T19:06:13.466990+09:00",
-    "duration_seconds": 52.247227,
-    "ended_at": "2026-10-05T19:06:12.933345+09:00",
-    "error_message": "hourly crawl completed. 76 records saved. attempt=1",
-    "id": 5754,
-    "job_name": "hourly",
-    "rows_inserted": 76,
-    "run_id": "6e39ae4b-a1",
-    "started_at": "2026-10-05T19:05:20.686120+09:00",
     "status": "SUCCESS"
   }
 ]
