@@ -1,6 +1,32 @@
 [
   {
     "alert_sent": true,
+    "created_at": "2026-10-07T23:08:01.781115+09:00",
+    "duration_seconds": 0.358134,
+    "ended_at": "2026-10-07T23:08:01.384391+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
+    "id": 5901,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "run_id": "ae444f16-a1",
+    "started_at": "2026-10-07T23:08:01.026257+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
+    "created_at": "2026-10-07T23:08:00.911253+09:00",
+    "duration_seconds": 47.694023,
+    "ended_at": "2026-10-07T23:08:00.522786+09:00",
+    "error_message": "hourly crawl completed. 96 records saved. attempt=1",
+    "id": 5900,
+    "job_name": "hourly",
+    "rows_inserted": 96,
+    "run_id": "0e703420-a1",
+    "started_at": "2026-10-07T23:07:12.828763+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
     "created_at": "2026-10-07T22:04:27.315011+09:00",
     "duration_seconds": 0.386551,
     "ended_at": "2026-10-07T22:04:26.932186+09:00",
@@ -1271,32 +1297,6 @@
     "rows_inserted": 0,
     "run_id": "7ebbb69f-a3",
     "started_at": "2026-10-06T10:16:36.890870+09:00",
-    "status": "FAILED"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-10-06T10:11:36.749703+09:00",
-    "duration_seconds": 20.221615,
-    "ended_at": "2026-10-06T10:11:35.830864+09:00",
-    "error_message": "HTTPSConnectionPool(host='apihub.kma.go.kr', port=443): Read timed out. (read timeout=20) attempt=2",
-    "id": 5801,
-    "job_name": "kma_hourly",
-    "rows_inserted": 0,
-    "run_id": "0e753917-a2",
-    "started_at": "2026-10-06T10:11:15.609250+09:00",
-    "status": "FAILED"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-10-06T10:06:15.468897+09:00",
-    "duration_seconds": 20.249788,
-    "ended_at": "2026-10-06T10:06:15.058636+09:00",
-    "error_message": "HTTPSConnectionPool(host='apihub.kma.go.kr', port=443): Read timed out. (read timeout=20) attempt=1",
-    "id": 5800,
-    "job_name": "kma_hourly",
-    "rows_inserted": 0,
-    "run_id": "acb0f259-a1",
-    "started_at": "2026-10-06T10:05:54.808847+09:00",
     "status": "FAILED"
   }
 ]
