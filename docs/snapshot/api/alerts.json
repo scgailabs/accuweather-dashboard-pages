@@ -1,5 +1,38 @@
 [
   {
+    "alert_type": "SUCCESS",
+    "created_at": "2026-10-10T01:08:13.036348+09:00",
+    "id": 6169,
+    "job_name": "kma_hourly",
+    "message": "Saved 1 records in 0.3s (attempt=1)",
+    "sent_at": "2026-10-10T01:08:13.036348+09:00",
+    "sent_to": "discord",
+    "severity": "INFO",
+    "status": "SENT"
+  },
+  {
+    "alert_type": "SUCCESS",
+    "created_at": "2026-10-10T01:08:12.216085+09:00",
+    "id": 6168,
+    "job_name": "hourly",
+    "message": "Saved 94 records in 62.0s (attempt=1)",
+    "sent_at": "2026-10-10T01:08:12.216085+09:00",
+    "sent_to": "discord",
+    "severity": "INFO",
+    "status": "SENT"
+  },
+  {
+    "alert_type": "SUCCESS",
+    "created_at": "2026-10-10T00:22:14.596248+09:00",
+    "id": 6167,
+    "job_name": "kma_daily",
+    "message": "Saved 1 records in 0.3s (attempt=3)",
+    "sent_at": "2026-10-10T00:22:14.596248+09:00",
+    "sent_to": "discord",
+    "severity": "INFO",
+    "status": "SENT"
+  },
+  {
     "alert_type": "NO_DATA",
     "created_at": "2026-10-10T00:17:13.639962+09:00",
     "id": 6166,
@@ -514,39 +547,6 @@
     "sent_at": "2026-10-09T10:08:09.131887+09:00",
     "sent_to": "discord",
     "severity": "CRITICAL",
-    "status": "SENT"
-  },
-  {
-    "alert_type": "SUCCESS",
-    "created_at": "2026-10-09T10:07:48.409083+09:00",
-    "id": 6119,
-    "job_name": "hourly",
-    "message": "Saved 85 records in 46.1s (attempt=1)",
-    "sent_at": "2026-10-09T10:07:48.409083+09:00",
-    "sent_to": "discord",
-    "severity": "INFO",
-    "status": "SENT"
-  },
-  {
-    "alert_type": "SUCCESS",
-    "created_at": "2026-10-09T09:06:29.188375+09:00",
-    "id": 6118,
-    "job_name": "kma_hourly",
-    "message": "Saved 1 records in 0.3s (attempt=1)",
-    "sent_at": "2026-10-09T09:06:29.188375+09:00",
-    "sent_to": "discord",
-    "severity": "INFO",
-    "status": "SENT"
-  },
-  {
-    "alert_type": "SUCCESS",
-    "created_at": "2026-10-09T09:06:28.317163+09:00",
-    "id": 6117,
-    "job_name": "hourly",
-    "message": "Saved 86 records in 60.6s (attempt=1)",
-    "sent_at": "2026-10-09T09:06:28.317163+09:00",
-    "sent_to": "discord",
-    "severity": "INFO",
     "status": "SENT"
   }
 ]
