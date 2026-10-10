@@ -1,6 +1,32 @@
 [
   {
     "alert_sent": true,
+    "created_at": "2026-10-10T22:03:14.884053+09:00",
+    "duration_seconds": 0.333996,
+    "ended_at": "2026-10-10T22:03:14.526653+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
+    "id": 6103,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "run_id": "98e0a1bc-a1",
+    "started_at": "2026-10-10T22:03:14.192657+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
+    "created_at": "2026-10-10T22:03:14.070984+09:00",
+    "duration_seconds": 55.430862,
+    "ended_at": "2026-10-10T22:03:13.669318+09:00",
+    "error_message": "hourly crawl completed. 73 records saved. attempt=1",
+    "id": 6102,
+    "job_name": "hourly",
+    "rows_inserted": 73,
+    "run_id": "beb7b84a-a1",
+    "started_at": "2026-10-10T22:02:18.238455+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
     "created_at": "2026-10-10T21:03:22.015009+09:00",
     "duration_seconds": 1.137103,
     "ended_at": "2026-10-10T21:03:21.636145+09:00",
@@ -1272,31 +1298,5 @@
     "run_id": "9270e45b-a1",
     "started_at": "2026-10-09T11:06:24.777405+09:00",
     "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-10-09T10:13:09.992720+09:00",
-    "duration_seconds": 0.300163,
-    "ended_at": "2026-10-09T10:13:09.565995+09:00",
-    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=2",
-    "id": 6003,
-    "job_name": "kma_hourly",
-    "rows_inserted": 1,
-    "run_id": "b383f123-a2",
-    "started_at": "2026-10-09T10:13:09.265832+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-10-09T10:08:09.125815+09:00",
-    "duration_seconds": 20.222359,
-    "ended_at": "2026-10-09T10:08:08.737087+09:00",
-    "error_message": "HTTPSConnectionPool(host='apihub.kma.go.kr', port=443): Read timed out. (read timeout=20) attempt=1",
-    "id": 6002,
-    "job_name": "kma_hourly",
-    "rows_inserted": 0,
-    "run_id": "2aef1dae-a1",
-    "started_at": "2026-10-09T10:07:48.514729+09:00",
-    "status": "FAILED"
   }
 ]
