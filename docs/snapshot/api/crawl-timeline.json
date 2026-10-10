@@ -1,36 +1,6 @@
 [
   {
     "cnt": 1,
-    "job_name": "kma_daily",
-    "last_error": null,
-    "last_event_at": "2026-10-04T00:22:47.209508+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-10-04T00:00:00+09:00",
-    "total_rows": 1
-  },
-  {
-    "cnt": 1,
-    "job_name": "hourly",
-    "last_error": null,
-    "last_event_at": "2026-10-04T01:07:31.016738+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-10-04T01:00:00+09:00",
-    "total_rows": 94
-  },
-  {
-    "cnt": 1,
-    "job_name": "kma_hourly",
-    "last_error": null,
-    "last_event_at": "2026-10-04T01:07:31.892010+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-10-04T01:00:00+09:00",
-    "total_rows": 1
-  },
-  {
-    "cnt": 1,
     "job_name": "hourly",
     "last_error": null,
     "last_event_at": "2026-10-04T02:05:40.256939+09:00",
@@ -4260,14 +4230,14 @@
     "total_rows": 95
   },
   {
-    "cnt": 2,
+    "cnt": 3,
     "job_name": "kma_daily",
     "last_error": "Crawl completed but 0 records saved. Possible bot block or selector mismatch. attempt=2",
-    "last_event_at": "2026-10-11T00:18:15.905290+09:00",
-    "status": "NO_DATA",
+    "last_event_at": "2026-10-11T00:23:17.610516+09:00",
+    "status": "SUCCESS",
     "target_range_sample": null,
     "time_slot": "2026-10-11T00:00:00+09:00",
-    "total_rows": 0
+    "total_rows": 1
   },
   {
     "cnt": 2,
@@ -4277,6 +4247,26 @@
     "status": "SUCCESS",
     "target_range_sample": null,
     "time_slot": "2026-10-11T00:00:00+09:00",
+    "total_rows": 1
+  },
+  {
+    "cnt": 1,
+    "job_name": "hourly",
+    "last_error": null,
+    "last_event_at": "2026-10-11T01:04:32.191577+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-10-11T01:00:00+09:00",
+    "total_rows": 94
+  },
+  {
+    "cnt": 1,
+    "job_name": "kma_hourly",
+    "last_error": null,
+    "last_event_at": "2026-10-11T01:04:33.043757+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-10-11T01:00:00+09:00",
     "total_rows": 1
   }
 ]
