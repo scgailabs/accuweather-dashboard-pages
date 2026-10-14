@@ -1,5 +1,60 @@
 [
   {
+    "alert_type": "NO_DATA",
+    "created_at": "2026-10-15T00:15:01.400957+09:00",
+    "id": 6521,
+    "job_name": "kma_daily",
+    "message": "0 records saved. Duration: 0.4s (attempt=1)",
+    "sent_at": "2026-10-15T00:15:01.400957+09:00",
+    "sent_to": "discord",
+    "severity": "WARNING",
+    "status": "SENT"
+  },
+  {
+    "alert_type": "SUCCESS",
+    "created_at": "2026-10-15T00:15:00.270622+09:00",
+    "id": 6520,
+    "job_name": "daily",
+    "message": "Saved 15 records in 7.6s (attempt=1)",
+    "sent_at": "2026-10-15T00:15:00.270622+09:00",
+    "sent_to": "discord",
+    "severity": "INFO",
+    "status": "SENT"
+  },
+  {
+    "alert_type": "SUCCESS",
+    "created_at": "2026-10-15T00:07:56.136508+09:00",
+    "id": 6519,
+    "job_name": "kma_hourly",
+    "message": "Saved 1 records in 0.4s (attempt=1)",
+    "sent_at": "2026-10-15T00:07:56.136508+09:00",
+    "sent_to": "discord",
+    "severity": "INFO",
+    "status": "SENT"
+  },
+  {
+    "alert_type": "SUCCESS",
+    "created_at": "2026-10-15T00:07:55.229785+09:00",
+    "id": 6518,
+    "job_name": "hourly",
+    "message": "Saved 95 records in 51.7s (attempt=1)",
+    "sent_at": "2026-10-15T00:07:55.229785+09:00",
+    "sent_to": "discord",
+    "severity": "INFO",
+    "status": "SENT"
+  },
+  {
+    "alert_type": "SUCCESS",
+    "created_at": "2026-10-14T23:31:20.622521+09:00",
+    "id": 6517,
+    "job_name": "monthly",
+    "message": "Saved 91 records in 80.2s (attempt=1)",
+    "sent_at": "2026-10-14T23:31:20.622521+09:00",
+    "sent_to": "discord",
+    "severity": "INFO",
+    "status": "SENT"
+  },
+  {
     "alert_type": "SUCCESS",
     "created_at": "2026-10-14T23:03:31.019037+09:00",
     "id": 6516,
@@ -490,61 +545,6 @@
     "job_name": "kma_hourly",
     "message": "Saved 1 records in 0.3s (attempt=1)",
     "sent_at": "2026-10-14T06:05:09.802242+09:00",
-    "sent_to": "discord",
-    "severity": "INFO",
-    "status": "SENT"
-  },
-  {
-    "alert_type": "SUCCESS",
-    "created_at": "2026-10-14T06:05:08.898706+09:00",
-    "id": 6471,
-    "job_name": "hourly",
-    "message": "Saved 89 records in 50.4s (attempt=1)",
-    "sent_at": "2026-10-14T06:05:08.898706+09:00",
-    "sent_to": "discord",
-    "severity": "INFO",
-    "status": "SENT"
-  },
-  {
-    "alert_type": "SUCCESS",
-    "created_at": "2026-10-14T05:08:45.321444+09:00",
-    "id": 6470,
-    "job_name": "kma_hourly",
-    "message": "Saved 1 records in 0.4s (attempt=1)",
-    "sent_at": "2026-10-14T05:08:45.321444+09:00",
-    "sent_to": "discord",
-    "severity": "INFO",
-    "status": "SENT"
-  },
-  {
-    "alert_type": "SUCCESS",
-    "created_at": "2026-10-14T05:08:44.346750+09:00",
-    "id": 6469,
-    "job_name": "hourly",
-    "message": "Saved 90 records in 54.1s (attempt=1)",
-    "sent_at": "2026-10-14T05:08:44.346750+09:00",
-    "sent_to": "discord",
-    "severity": "INFO",
-    "status": "SENT"
-  },
-  {
-    "alert_type": "SUCCESS",
-    "created_at": "2026-10-14T04:14:10.339484+09:00",
-    "id": 6468,
-    "job_name": "kma_daily",
-    "message": "Saved 1 records in 0.4s (attempt=1)",
-    "sent_at": "2026-10-14T04:14:10.339484+09:00",
-    "sent_to": "discord",
-    "severity": "INFO",
-    "status": "SENT"
-  },
-  {
-    "alert_type": "SUCCESS",
-    "created_at": "2026-10-14T04:14:09.560607+09:00",
-    "id": 6467,
-    "job_name": "daily",
-    "message": "Saved 15 records in 10.3s (attempt=1)",
-    "sent_at": "2026-10-14T04:14:09.560607+09:00",
     "sent_to": "discord",
     "severity": "INFO",
     "status": "SENT"
