@@ -11,21 +11,21 @@
     {
       "detail": "",
       "job_name": "hourly",
-      "last_seen_at": "2026-10-15T00:07:55.233082+09:00",
+      "last_seen_at": "2026-10-15T01:04:49.713907+09:00",
       "service_name": "accuweather-crawler",
       "status": "IDLE"
     },
     {
       "detail": "",
       "job_name": "kma_daily",
-      "last_seen_at": "2026-10-15T00:15:01.404002+09:00",
+      "last_seen_at": "2026-10-15T00:25:22.944949+09:00",
       "service_name": "accuweather-crawler",
       "status": "IDLE"
     },
     {
       "detail": "",
       "job_name": "kma_hourly",
-      "last_seen_at": "2026-10-15T00:07:56.139485+09:00",
+      "last_seen_at": "2026-10-15T01:09:51.681527+09:00",
       "service_name": "accuweather-crawler",
       "status": "IDLE"
     },
@@ -42,13 +42,13 @@
       "last": "2026-10-15T00:14:59.430571+09:00"
     },
     "hourly": {
-      "last": "2026-10-15T00:07:49.684528+09:00"
+      "last": "2026-10-15T01:04:40.956800+09:00"
     },
     "kma_daily": {
-      "last": "2026-10-14T20:13:23.895810+09:00"
+      "last": "2026-10-15T00:25:22.529979+09:00"
     },
     "kma_hourly": {
-      "last": "2026-10-15T00:07:55.720605+09:00"
+      "last": "2026-10-15T01:09:51.240611+09:00"
     },
     "monthly": {
       "last": "2026-10-14T23:30:00.487721+09:00"
@@ -63,17 +63,17 @@
     "hourly": {
       "job_name": "hourly",
       "last_rows": 96,
-      "last_success_at": "2026-10-15T00:07:55.223847+09:00"
+      "last_success_at": "2026-10-15T01:04:49.704679+09:00"
     },
     "kma_daily": {
       "job_name": "kma_daily",
       "last_rows": 1,
-      "last_success_at": "2026-10-14T20:13:24.446432+09:00"
+      "last_success_at": "2026-10-15T00:25:22.934106+09:00"
     },
     "kma_hourly": {
       "job_name": "kma_hourly",
       "last_rows": 1,
-      "last_success_at": "2026-10-15T00:07:56.131443+09:00"
+      "last_success_at": "2026-10-15T01:09:51.672926+09:00"
     },
     "monthly": {
       "job_name": "monthly",
@@ -81,5 +81,7 @@
       "last_success_at": "2026-10-14T23:31:20.616537+09:00"
     }
   },
-  "recent_failures": {}
+  "recent_failures": {
+    "kma_daily": 1
+  }
 }
