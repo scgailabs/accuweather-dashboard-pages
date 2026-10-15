@@ -1,53 +1,13 @@
 [
   {
     "cnt": 1,
-    "job_name": "monthly",
-    "last_error": null,
-    "last_event_at": "2026-10-08T23:31:00.712845+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-10-08T23:00:00+09:00",
-    "total_rows": 91
-  },
-  {
-    "cnt": 1,
-    "job_name": "daily",
-    "last_error": null,
-    "last_event_at": "2026-10-09T00:14:22.305687+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-10-09T00:00:00+09:00",
-    "total_rows": 15
-  },
-  {
-    "cnt": 1,
-    "job_name": "hourly",
-    "last_error": null,
-    "last_event_at": "2026-10-09T00:03:58.201159+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-10-09T00:00:00+09:00",
-    "total_rows": 95
-  },
-  {
-    "cnt": 3,
     "job_name": "kma_daily",
     "last_error": "HTTPSConnectionPool(host='apihub.kma.go.kr', port=443): Read timed out. (read timeout=20) attempt=3",
     "last_event_at": "2026-10-09T00:24:44.800787+09:00",
-    "status": "NO_DATA",
+    "status": "FAILED",
     "target_range_sample": null,
     "time_slot": "2026-10-09T00:00:00+09:00",
     "total_rows": 0
-  },
-  {
-    "cnt": 1,
-    "job_name": "kma_hourly",
-    "last_error": null,
-    "last_event_at": "2026-10-09T00:03:58.966724+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-10-09T00:00:00+09:00",
-    "total_rows": 1
   },
   {
     "cnt": 1,
@@ -4267,6 +4227,56 @@
     "status": "SUCCESS",
     "target_range_sample": null,
     "time_slot": "2026-10-15T23:00:00+09:00",
+    "total_rows": 1
+  },
+  {
+    "cnt": 1,
+    "job_name": "monthly",
+    "last_error": null,
+    "last_event_at": "2026-10-15T23:31:01.507257+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-10-15T23:00:00+09:00",
+    "total_rows": 91
+  },
+  {
+    "cnt": 1,
+    "job_name": "daily",
+    "last_error": null,
+    "last_event_at": "2026-10-16T00:13:18.747498+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-10-16T00:00:00+09:00",
+    "total_rows": 15
+  },
+  {
+    "cnt": 1,
+    "job_name": "hourly",
+    "last_error": null,
+    "last_event_at": "2026-10-16T00:06:51.329693+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-10-16T00:00:00+09:00",
+    "total_rows": 95
+  },
+  {
+    "cnt": 2,
+    "job_name": "kma_daily",
+    "last_error": "Crawl completed but 0 records saved. Possible bot block or selector mismatch. attempt=1",
+    "last_event_at": "2026-10-16T00:18:20.564515+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-10-16T00:00:00+09:00",
+    "total_rows": 1
+  },
+  {
+    "cnt": 2,
+    "job_name": "kma_hourly",
+    "last_error": "Crawl completed but 0 records saved. Possible bot block or selector mismatch. attempt=1",
+    "last_event_at": "2026-10-16T00:11:53.574079+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-10-16T00:00:00+09:00",
     "total_rows": 1
   }
 ]
