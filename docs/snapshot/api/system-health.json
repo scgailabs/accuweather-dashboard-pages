@@ -11,21 +11,21 @@
     {
       "detail": "",
       "job_name": "hourly",
-      "last_seen_at": "2026-10-19T00:06:10.703843+09:00",
+      "last_seen_at": "2026-10-19T01:04:17.165839+09:00",
       "service_name": "accuweather-crawler",
       "status": "IDLE"
     },
     {
       "detail": "",
       "job_name": "kma_daily",
-      "last_seen_at": "2026-10-19T00:19:58.349244+09:00",
+      "last_seen_at": "2026-10-19T00:25:19.826133+09:00",
       "service_name": "accuweather-crawler",
-      "status": "RUNNING"
+      "status": "IDLE"
     },
     {
       "detail": "",
       "job_name": "kma_hourly",
-      "last_seen_at": "2026-10-19T00:06:11.509717+09:00",
+      "last_seen_at": "2026-10-19T01:04:17.924605+09:00",
       "service_name": "accuweather-crawler",
       "status": "IDLE"
     },
@@ -42,13 +42,13 @@
       "last": "2026-10-19T00:14:56.683705+09:00"
     },
     "hourly": {
-      "last": "2026-10-19T00:06:01.895083+09:00"
+      "last": "2026-10-19T01:04:09.488142+09:00"
     },
     "kma_daily": {
-      "last": "2026-10-18T20:24:31.886439+09:00"
+      "last": "2026-10-19T00:25:19.379102+09:00"
     },
     "kma_hourly": {
-      "last": "2026-10-19T00:06:11.056137+09:00"
+      "last": "2026-10-19T01:04:17.572876+09:00"
     },
     "monthly": {
       "last": "2026-10-18T23:30:00.436470+09:00"
@@ -63,17 +63,17 @@
     "hourly": {
       "job_name": "hourly",
       "last_rows": 96,
-      "last_success_at": "2026-10-19T00:06:10.695095+09:00"
+      "last_success_at": "2026-10-19T01:04:17.156474+09:00"
     },
     "kma_daily": {
       "job_name": "kma_daily",
       "last_rows": 1,
-      "last_success_at": "2026-10-18T20:24:32.516106+09:00"
+      "last_success_at": "2026-10-19T00:25:19.815853+09:00"
     },
     "kma_hourly": {
       "job_name": "kma_hourly",
       "last_rows": 1,
-      "last_success_at": "2026-10-19T00:06:11.502080+09:00"
+      "last_success_at": "2026-10-19T01:04:17.916874+09:00"
     },
     "monthly": {
       "job_name": "monthly",
@@ -81,5 +81,7 @@
       "last_success_at": "2026-10-18T23:31:00.910539+09:00"
     }
   },
-  "recent_failures": {}
+  "recent_failures": {
+    "kma_daily": 1
+  }
 }
