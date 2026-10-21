@@ -1,5 +1,25 @@
 [
   {
+    "created_at": "2026-10-21T13:06:54.569612+09:00",
+    "ended_at": "2026-10-21T13:06:54.102693+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
+    "id": 6844,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "started_at": "2026-10-21T13:06:53.755702+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "created_at": "2026-10-21T13:06:53.643115+09:00",
+    "ended_at": "2026-10-21T13:06:53.248180+09:00",
+    "error_message": "hourly crawl completed. 82 records saved. attempt=1",
+    "id": 6843,
+    "job_name": "hourly",
+    "rows_inserted": 82,
+    "started_at": "2026-10-21T13:05:54.657615+09:00",
+    "status": "SUCCESS"
+  },
+  {
     "created_at": "2026-10-21T12:13:43.923419+09:00",
     "ended_at": "2026-10-21T12:13:43.474194+09:00",
     "error_message": "kma_daily crawl completed. 1 records saved. attempt=1",
@@ -477,26 +497,6 @@
     "job_name": "kma_hourly",
     "rows_inserted": 1,
     "started_at": "2026-10-20T19:12:13.753847+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "created_at": "2026-10-20T19:07:13.610784+09:00",
-    "ended_at": "2026-10-20T19:07:12.583276+09:00",
-    "error_message": "HTTPSConnectionPool(host='apihub.kma.go.kr', port=443): Max retries exceeded with url: /api/typ01/url/kma_sfctm2.php?tm=&stn=108&authKey=[redacted] (Caused by ConnectTimeoutError(<HTTPSConnection(host='apihub.kma.go.kr', port=443) at 0x7f0c5ffc5a20>, 'Connection to apihub.kma.go.kr timed out. (connect timeout=20)')) attempt=1",
-    "id": 6794,
-    "job_name": "kma_hourly",
-    "rows_inserted": 0,
-    "started_at": "2026-10-20T19:06:52.404323+09:00",
-    "status": "FAILED"
-  },
-  {
-    "created_at": "2026-10-20T19:06:52.299004+09:00",
-    "ended_at": "2026-10-20T19:06:51.863181+09:00",
-    "error_message": "hourly crawl completed. 76 records saved. attempt=1",
-    "id": 6793,
-    "job_name": "hourly",
-    "rows_inserted": 76,
-    "started_at": "2026-10-20T19:05:56.041136+09:00",
     "status": "SUCCESS"
   }
 ]
