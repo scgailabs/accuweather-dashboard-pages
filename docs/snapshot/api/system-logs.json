@@ -1,6 +1,32 @@
 [
   {
     "alert_sent": true,
+    "created_at": "2026-10-29T15:07:43.640930+09:00",
+    "duration_seconds": 0.380221,
+    "ended_at": "2026-10-29T15:07:43.270122+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
+    "id": 7354,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "run_id": "779917bd-a1",
+    "started_at": "2026-10-29T15:07:42.889901+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
+    "created_at": "2026-10-29T15:07:42.775921+09:00",
+    "duration_seconds": 49.52616,
+    "ended_at": "2026-10-29T15:07:42.400440+09:00",
+    "error_message": "hourly crawl completed. 80 records saved. attempt=1",
+    "id": 7353,
+    "job_name": "hourly",
+    "rows_inserted": 80,
+    "run_id": "d9f2742c-a1",
+    "started_at": "2026-10-29T15:06:52.874280+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
     "created_at": "2026-10-29T14:04:54.566297+09:00",
     "duration_seconds": 0.309491,
     "ended_at": "2026-10-29T14:04:54.200395+09:00",
@@ -1272,31 +1298,5 @@
     "run_id": "f426712e-a3",
     "started_at": "2026-10-28T00:22:47.067639+09:00",
     "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-10-28T00:17:46.928642+09:00",
-    "duration_seconds": 0.732766,
-    "ended_at": "2026-10-28T00:17:46.558731+09:00",
-    "error_message": "Crawl completed but 0 records saved. Possible bot block or selector mismatch. attempt=2",
-    "id": 7254,
-    "job_name": "kma_daily",
-    "rows_inserted": 0,
-    "run_id": "1be309d2-a2",
-    "started_at": "2026-10-28T00:17:45.825965+09:00",
-    "status": "NO_DATA"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-10-28T00:12:45.691555+09:00",
-    "duration_seconds": 0.350385,
-    "ended_at": "2026-10-28T00:12:45.276264+09:00",
-    "error_message": "Crawl completed but 0 records saved. Possible bot block or selector mismatch. attempt=1",
-    "id": 7253,
-    "job_name": "kma_daily",
-    "rows_inserted": 0,
-    "run_id": "643bb6e7-a1",
-    "started_at": "2026-10-28T00:12:44.925879+09:00",
-    "status": "NO_DATA"
   }
 ]
