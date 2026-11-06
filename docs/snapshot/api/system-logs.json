@@ -1,6 +1,32 @@
 [
   {
     "alert_sent": true,
+    "created_at": "2026-11-06T11:03:15.440077+09:00",
+    "duration_seconds": 0.271612,
+    "ended_at": "2026-11-06T11:03:13.109642+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
+    "id": 7865,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "run_id": "b4f26d6e-a1",
+    "started_at": "2026-11-06T11:03:12.838030+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
+    "created_at": "2026-11-06T11:03:12.728213+09:00",
+    "duration_seconds": 51.95586,
+    "ended_at": "2026-11-06T11:03:12.339874+09:00",
+    "error_message": "hourly crawl completed. 84 records saved. attempt=1",
+    "id": 7864,
+    "job_name": "hourly",
+    "rows_inserted": 84,
+    "run_id": "8df0d763-a1",
+    "started_at": "2026-11-06T11:02:20.384014+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
     "created_at": "2026-11-06T10:05:55.533521+09:00",
     "duration_seconds": 0.62003,
     "ended_at": "2026-11-06T10:05:55.120704+09:00",
@@ -1272,31 +1298,5 @@
     "run_id": "36d974a7-a3",
     "started_at": "2026-11-05T00:24:53.398235+09:00",
     "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-11-05T00:19:53.328160+09:00",
-    "duration_seconds": 0.298725,
-    "ended_at": "2026-11-05T00:19:52.800219+09:00",
-    "error_message": "Crawl completed but 0 records saved. Possible bot block or selector mismatch. attempt=2",
-    "id": 7765,
-    "job_name": "kma_daily",
-    "rows_inserted": 0,
-    "run_id": "22eb234d-a2",
-    "started_at": "2026-11-05T00:19:52.501494+09:00",
-    "status": "NO_DATA"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-11-05T00:14:52.459751+09:00",
-    "duration_seconds": 0.273458,
-    "ended_at": "2026-11-05T00:14:52.089864+09:00",
-    "error_message": "Crawl completed but 0 records saved. Possible bot block or selector mismatch. attempt=1",
-    "id": 7764,
-    "job_name": "kma_daily",
-    "rows_inserted": 0,
-    "run_id": "1fcfc1f1-a1",
-    "started_at": "2026-11-05T00:14:51.816406+09:00",
-    "status": "NO_DATA"
   }
 ]
