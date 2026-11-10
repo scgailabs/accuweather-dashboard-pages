@@ -1,6 +1,32 @@
 [
   {
     "alert_sent": true,
+    "created_at": "2026-11-10T21:06:18.313799+09:00",
+    "duration_seconds": 0.316228,
+    "ended_at": "2026-11-10T21:06:17.919265+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
+    "id": 8167,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "run_id": "8aaac007-a1",
+    "started_at": "2026-11-10T21:06:17.603037+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
+    "created_at": "2026-11-10T21:06:17.492223+09:00",
+    "duration_seconds": 44.90692,
+    "ended_at": "2026-11-10T21:06:17.138820+09:00",
+    "error_message": "hourly crawl completed. 74 records saved. attempt=1",
+    "id": 8166,
+    "job_name": "hourly",
+    "rows_inserted": 74,
+    "run_id": "2e1c2efe-a1",
+    "started_at": "2026-11-10T21:05:32.231898+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
     "created_at": "2026-11-10T20:12:45.864075+09:00",
     "duration_seconds": 0.362143,
     "ended_at": "2026-11-10T20:12:45.525334+09:00",
@@ -1272,31 +1298,5 @@
     "run_id": "bd52fc9b-a1",
     "started_at": "2026-11-09T11:03:03.675232+09:00",
     "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-11-09T10:12:57.575123+09:00",
-    "duration_seconds": 0.297775,
-    "ended_at": "2026-11-09T10:12:57.162117+09:00",
-    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=3",
-    "id": 8067,
-    "job_name": "kma_hourly",
-    "rows_inserted": 1,
-    "run_id": "e6e74056-a3",
-    "started_at": "2026-11-09T10:12:56.864342+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-11-09T10:07:56.726316+09:00",
-    "duration_seconds": 0.321508,
-    "ended_at": "2026-11-09T10:07:56.240480+09:00",
-    "error_message": "Crawl completed but 0 records saved. Possible bot block or selector mismatch. attempt=2",
-    "id": 8066,
-    "job_name": "kma_hourly",
-    "rows_inserted": 0,
-    "run_id": "83ac8613-a2",
-    "started_at": "2026-11-09T10:07:55.918972+09:00",
-    "status": "NO_DATA"
   }
 ]
