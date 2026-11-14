@@ -1,6 +1,32 @@
 [
   {
     "alert_sent": true,
+    "created_at": "2026-11-15T05:08:58.438497+09:00",
+    "duration_seconds": 0.239644,
+    "ended_at": "2026-11-15T05:08:58.055956+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
+    "id": 8480,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "run_id": "20db21e8-a1",
+    "started_at": "2026-11-15T05:08:57.816312+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
+    "created_at": "2026-11-15T05:08:57.699679+09:00",
+    "duration_seconds": 57.387478,
+    "ended_at": "2026-11-15T05:08:57.347306+09:00",
+    "error_message": "hourly crawl completed. 90 records saved. attempt=1",
+    "id": 8479,
+    "job_name": "hourly",
+    "rows_inserted": 90,
+    "run_id": "351a0927-a1",
+    "started_at": "2026-11-15T05:07:59.959829+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
     "created_at": "2026-11-15T04:14:26.628232+09:00",
     "duration_seconds": 0.365238,
     "ended_at": "2026-11-15T04:14:26.198103+09:00",
@@ -1272,31 +1298,5 @@
     "run_id": "fc069013-a1",
     "started_at": "2026-11-13T22:06:06.625426+09:00",
     "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-11-13T21:09:15.607908+09:00",
-    "duration_seconds": 0.370251,
-    "ended_at": "2026-11-13T21:09:15.192181+09:00",
-    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=2",
-    "id": 8380,
-    "job_name": "kma_hourly",
-    "rows_inserted": 1,
-    "run_id": "bd6f6094-a2",
-    "started_at": "2026-11-13T21:09:14.821930+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-11-13T21:04:14.684701+09:00",
-    "duration_seconds": 0.334559,
-    "ended_at": "2026-11-13T21:04:14.326573+09:00",
-    "error_message": "Crawl completed but 0 records saved. Possible bot block or selector mismatch. attempt=1",
-    "id": 8379,
-    "job_name": "kma_hourly",
-    "rows_inserted": 0,
-    "run_id": "1a53a50f-a1",
-    "started_at": "2026-11-13T21:04:13.992014+09:00",
-    "status": "NO_DATA"
   }
 ]
