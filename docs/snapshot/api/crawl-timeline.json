@@ -1,46 +1,6 @@
 [
   {
     "cnt": 1,
-    "job_name": "daily",
-    "last_error": null,
-    "last_event_at": "2026-11-07T16:13:22.070160+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-11-07T16:00:00+09:00",
-    "total_rows": 15
-  },
-  {
-    "cnt": 1,
-    "job_name": "hourly",
-    "last_error": null,
-    "last_event_at": "2026-11-07T16:06:09.321519+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-11-07T16:00:00+09:00",
-    "total_rows": 79
-  },
-  {
-    "cnt": 1,
-    "job_name": "kma_daily",
-    "last_error": null,
-    "last_event_at": "2026-11-07T16:13:22.897697+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-11-07T16:00:00+09:00",
-    "total_rows": 1
-  },
-  {
-    "cnt": 1,
-    "job_name": "kma_hourly",
-    "last_error": null,
-    "last_event_at": "2026-11-07T16:06:10.231105+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-11-07T16:00:00+09:00",
-    "total_rows": 1
-  },
-  {
-    "cnt": 1,
     "job_name": "hourly",
     "last_error": null,
     "last_event_at": "2026-11-07T17:05:26.593231+09:00",
@@ -4267,6 +4227,46 @@
     "status": "SUCCESS",
     "target_range_sample": null,
     "time_slot": "2026-11-14T15:00:00+09:00",
+    "total_rows": 1
+  },
+  {
+    "cnt": 1,
+    "job_name": "daily",
+    "last_error": null,
+    "last_event_at": "2026-11-14T16:14:04.002048+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-11-14T16:00:00+09:00",
+    "total_rows": 15
+  },
+  {
+    "cnt": 1,
+    "job_name": "hourly",
+    "last_error": null,
+    "last_event_at": "2026-11-14T16:05:10.461794+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-11-14T16:00:00+09:00",
+    "total_rows": 79
+  },
+  {
+    "cnt": 1,
+    "job_name": "kma_daily",
+    "last_error": null,
+    "last_event_at": "2026-11-14T16:14:04.799429+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-11-14T16:00:00+09:00",
+    "total_rows": 1
+  },
+  {
+    "cnt": 2,
+    "job_name": "kma_hourly",
+    "last_error": "Crawl completed but 0 records saved. Possible bot block or selector mismatch. attempt=1",
+    "last_event_at": "2026-11-14T16:10:12.998774+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-11-14T16:00:00+09:00",
     "total_rows": 1
   }
 ]
