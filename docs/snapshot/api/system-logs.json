@@ -1,6 +1,32 @@
 [
   {
     "alert_sent": true,
+    "created_at": "2026-11-14T22:04:06.469413+09:00",
+    "duration_seconds": 0.231712,
+    "ended_at": "2026-11-14T22:04:06.071797+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
+    "id": 8457,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "run_id": "bcfafab4-a1",
+    "started_at": "2026-11-14T22:04:05.840085+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
+    "created_at": "2026-11-14T22:04:05.728431+09:00",
+    "duration_seconds": 47.19212,
+    "ended_at": "2026-11-14T22:04:05.367499+09:00",
+    "error_message": "hourly crawl completed. 73 records saved. attempt=1",
+    "id": 8456,
+    "job_name": "hourly",
+    "rows_inserted": 73,
+    "run_id": "b4db426e-a1",
+    "started_at": "2026-11-14T22:03:18.175379+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
     "created_at": "2026-11-14T21:04:34.492588+09:00",
     "duration_seconds": 0.405894,
     "ended_at": "2026-11-14T21:04:34.084173+09:00",
@@ -1271,32 +1297,6 @@
     "rows_inserted": 1,
     "run_id": "eafc414c-a2",
     "started_at": "2026-11-13T13:08:22.954998+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-11-13T13:03:22.820797+09:00",
-    "duration_seconds": 0.263016,
-    "ended_at": "2026-11-13T13:03:22.468354+09:00",
-    "error_message": "Crawl completed but 0 records saved. Possible bot block or selector mismatch. attempt=1",
-    "id": 8357,
-    "job_name": "kma_hourly",
-    "rows_inserted": 0,
-    "run_id": "df14ca71-a1",
-    "started_at": "2026-11-13T13:03:22.205338+09:00",
-    "status": "NO_DATA"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-11-13T13:03:22.092885+09:00",
-    "duration_seconds": 53.14109,
-    "ended_at": "2026-11-13T13:03:21.617122+09:00",
-    "error_message": "hourly crawl completed. 82 records saved. attempt=1",
-    "id": 8356,
-    "job_name": "hourly",
-    "rows_inserted": 82,
-    "run_id": "b20c1cd6-a1",
-    "started_at": "2026-11-13T13:02:28.476032+09:00",
     "status": "SUCCESS"
   }
 ]
