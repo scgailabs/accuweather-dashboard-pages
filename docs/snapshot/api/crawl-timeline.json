@@ -1,26 +1,6 @@
 [
   {
     "cnt": 1,
-    "job_name": "hourly",
-    "last_error": null,
-    "last_event_at": "2026-11-11T11:04:57.802657+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-11-11T11:00:00+09:00",
-    "total_rows": 84
-  },
-  {
-    "cnt": 1,
-    "job_name": "kma_hourly",
-    "last_error": null,
-    "last_event_at": "2026-11-11T11:05:00.073123+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-11-11T11:00:00+09:00",
-    "total_rows": 1
-  },
-  {
-    "cnt": 1,
     "job_name": "daily",
     "last_error": null,
     "last_event_at": "2026-11-11T12:15:00.886762+09:00",
@@ -4267,6 +4247,26 @@
     "status": "SUCCESS",
     "target_range_sample": null,
     "time_slot": "2026-11-18T10:00:00+09:00",
+    "total_rows": 1
+  },
+  {
+    "cnt": 1,
+    "job_name": "hourly",
+    "last_error": null,
+    "last_event_at": "2026-11-18T11:06:52.218423+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-11-18T11:00:00+09:00",
+    "total_rows": 84
+  },
+  {
+    "cnt": 3,
+    "job_name": "kma_hourly",
+    "last_error": "Crawl completed but 0 records saved. Possible bot block or selector mismatch. attempt=2",
+    "last_event_at": "2026-11-18T11:16:55.881207+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-11-18T11:00:00+09:00",
     "total_rows": 1
   }
 ]
