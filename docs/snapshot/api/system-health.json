@@ -11,21 +11,21 @@
     {
       "detail": "",
       "job_name": "hourly",
-      "last_seen_at": "2026-11-21T20:03:46.791238+09:00",
+      "last_seen_at": "2026-11-21T21:08:29.012823+09:00",
       "service_name": "accuweather-crawler",
       "status": "IDLE"
     },
     {
-      "detail": "HTTPSConnectionPool(host='apihub.kma.go.kr', port=443): Read timed out. (read timeout=20)",
+      "detail": "",
       "job_name": "kma_daily",
-      "last_seen_at": "2026-11-21T20:19:20.153628+09:00",
+      "last_seen_at": "2026-11-21T20:24:21.020392+09:00",
       "service_name": "accuweather-crawler",
-      "status": "ERROR"
+      "status": "IDLE"
     },
     {
       "detail": "",
       "job_name": "kma_hourly",
-      "last_seen_at": "2026-11-21T20:03:50.521835+09:00",
+      "last_seen_at": "2026-11-21T21:08:32.091128+09:00",
       "service_name": "accuweather-crawler",
       "status": "IDLE"
     },
@@ -42,13 +42,13 @@
       "last": "2026-11-21T20:13:37.405401+09:00"
     },
     "hourly": {
-      "last": "2026-11-21T20:03:42.425473+09:00"
+      "last": "2026-11-21T21:08:22.945727+09:00"
     },
     "kma_daily": {
-      "last": "2026-11-21T16:19:45.285510+09:00"
+      "last": "2026-11-21T20:24:20.591364+09:00"
     },
     "kma_hourly": {
-      "last": "2026-11-21T20:03:50.040892+09:00"
+      "last": "2026-11-21T21:08:31.714818+09:00"
     },
     "monthly": {
       "last": "2026-11-20T23:30:00.431625+09:00"
@@ -63,17 +63,17 @@
     "hourly": {
       "job_name": "hourly",
       "last_rows": 96,
-      "last_success_at": "2026-11-21T20:03:46.782701+09:00"
+      "last_success_at": "2026-11-21T21:08:29.004209+09:00"
     },
     "kma_daily": {
       "job_name": "kma_daily",
       "last_rows": 1,
-      "last_success_at": "2026-11-21T16:19:45.649569+09:00"
+      "last_success_at": "2026-11-21T20:24:21.010177+09:00"
     },
     "kma_hourly": {
       "job_name": "kma_hourly",
       "last_rows": 1,
-      "last_success_at": "2026-11-21T20:03:50.513443+09:00"
+      "last_success_at": "2026-11-21T21:08:32.083105+09:00"
     },
     "monthly": {
       "job_name": "monthly",
@@ -81,7 +81,5 @@
       "last_success_at": "2026-11-20T23:31:01.233496+09:00"
     }
   },
-  "recent_failures": {
-    "kma_daily": 2
-  }
+  "recent_failures": {}
 }
