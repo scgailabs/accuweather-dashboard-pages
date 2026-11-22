@@ -1,6 +1,58 @@
 [
   {
     "alert_sent": true,
+    "created_at": "2026-11-22T20:15:07.375588+09:00",
+    "duration_seconds": 0.46618,
+    "ended_at": "2026-11-22T20:15:06.943691+09:00",
+    "error_message": "kma_daily crawl completed. 1 records saved. attempt=1",
+    "id": 9036,
+    "job_name": "kma_daily",
+    "rows_inserted": 1,
+    "run_id": "ec9ddac5-a1",
+    "started_at": "2026-11-22T20:15:06.477511+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
+    "created_at": "2026-11-22T20:15:06.405730+09:00",
+    "duration_seconds": 8.369983,
+    "ended_at": "2026-11-22T20:15:05.901623+09:00",
+    "error_message": "daily crawl completed. 15 records saved. attempt=1",
+    "id": 9035,
+    "job_name": "daily",
+    "rows_inserted": 15,
+    "run_id": "e96ac147-a1",
+    "started_at": "2026-11-22T20:14:57.531640+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
+    "created_at": "2026-11-22T20:06:58.147420+09:00",
+    "duration_seconds": 2.718133,
+    "ended_at": "2026-11-22T20:06:57.755635+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
+    "id": 9034,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "run_id": "d18e9e9f-a1",
+    "started_at": "2026-11-22T20:06:55.037502+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
+    "created_at": "2026-11-22T20:06:54.923657+09:00",
+    "duration_seconds": 54.76035,
+    "ended_at": "2026-11-22T20:06:54.524140+09:00",
+    "error_message": "hourly crawl completed. 75 records saved. attempt=1",
+    "id": 9033,
+    "job_name": "hourly",
+    "rows_inserted": 75,
+    "run_id": "db568a8f-a1",
+    "started_at": "2026-11-22T20:05:59.763792+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
     "created_at": "2026-11-22T19:03:34.866685+09:00",
     "duration_seconds": 0.269151,
     "ended_at": "2026-11-22T19:03:34.428939+09:00",
@@ -1245,58 +1297,6 @@
     "rows_inserted": 82,
     "run_id": "c175aba6-a1",
     "started_at": "2026-11-21T13:05:58.924484+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-11-21T12:24:14.776252+09:00",
-    "duration_seconds": 20.237423,
-    "ended_at": "2026-11-21T12:24:14.354559+09:00",
-    "error_message": "HTTPSConnectionPool(host='apihub.kma.go.kr', port=443): Read timed out. (read timeout=20) attempt=3",
-    "id": 8936,
-    "job_name": "kma_daily",
-    "rows_inserted": 0,
-    "run_id": "5d8b6cc3-a3",
-    "started_at": "2026-11-21T12:23:54.117136+09:00",
-    "status": "FAILED"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-11-21T12:18:53.979476+09:00",
-    "duration_seconds": 20.23583,
-    "ended_at": "2026-11-21T12:18:53.570059+09:00",
-    "error_message": "HTTPSConnectionPool(host='apihub.kma.go.kr', port=443): Read timed out. (read timeout=20) attempt=2",
-    "id": 8935,
-    "job_name": "kma_daily",
-    "rows_inserted": 0,
-    "run_id": "b53de60f-a2",
-    "started_at": "2026-11-21T12:18:33.334228+09:00",
-    "status": "FAILED"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-11-21T12:13:33.247399+09:00",
-    "duration_seconds": 20.218746,
-    "ended_at": "2026-11-21T12:13:32.893407+09:00",
-    "error_message": "HTTPSConnectionPool(host='apihub.kma.go.kr', port=443): Read timed out. (read timeout=20) attempt=1",
-    "id": 8934,
-    "job_name": "kma_daily",
-    "rows_inserted": 0,
-    "run_id": "5b7da6d6-a1",
-    "started_at": "2026-11-21T12:13:12.674660+09:00",
-    "status": "FAILED"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-11-21T12:13:12.599038+09:00",
-    "duration_seconds": 9.591186,
-    "ended_at": "2026-11-21T12:13:12.116911+09:00",
-    "error_message": "daily crawl completed. 15 records saved. attempt=1",
-    "id": 8933,
-    "job_name": "daily",
-    "rows_inserted": 15,
-    "run_id": "408fcdeb-a1",
-    "started_at": "2026-11-21T12:13:02.525725+09:00",
     "status": "SUCCESS"
   }
 ]
