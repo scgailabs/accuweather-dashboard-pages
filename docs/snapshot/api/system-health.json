@@ -11,23 +11,23 @@
     {
       "detail": "",
       "job_name": "hourly",
-      "last_seen_at": "2026-11-24T00:08:48.669338+09:00",
+      "last_seen_at": "2026-11-24T01:04:11.251248+09:00",
+      "service_name": "accuweather-crawler",
+      "status": "IDLE"
+    },
+    {
+      "detail": "",
+      "job_name": "kma_daily",
+      "last_seen_at": "2026-11-24T00:23:34.999834+09:00",
       "service_name": "accuweather-crawler",
       "status": "IDLE"
     },
     {
       "detail": "HTTPSConnectionPool(host='apihub.kma.go.kr', port=443): Read timed out. (read timeout=20)",
-      "job_name": "kma_daily",
-      "last_seen_at": "2026-11-24T00:18:31.943757+09:00",
+      "job_name": "kma_hourly",
+      "last_seen_at": "2026-11-24T01:14:53.661790+09:00",
       "service_name": "accuweather-crawler",
       "status": "ERROR"
-    },
-    {
-      "detail": "",
-      "job_name": "kma_hourly",
-      "last_seen_at": "2026-11-24T00:08:49.441364+09:00",
-      "service_name": "accuweather-crawler",
-      "status": "IDLE"
     },
     {
       "detail": "",
@@ -42,10 +42,10 @@
       "last": "2026-11-24T00:12:49.878757+09:00"
     },
     "hourly": {
-      "last": "2026-11-24T00:08:44.703115+09:00"
+      "last": "2026-11-24T01:04:05.820459+09:00"
     },
     "kma_daily": {
-      "last": "2026-11-23T20:14:50.361402+09:00"
+      "last": "2026-11-24T00:23:34.611297+09:00"
     },
     "kma_hourly": {
       "last": "2026-11-24T00:08:49.051160+09:00"
@@ -63,12 +63,12 @@
     "hourly": {
       "job_name": "hourly",
       "last_rows": 96,
-      "last_success_at": "2026-11-24T00:08:48.660845+09:00"
+      "last_success_at": "2026-11-24T01:04:11.242554+09:00"
     },
     "kma_daily": {
       "job_name": "kma_daily",
       "last_rows": 1,
-      "last_success_at": "2026-11-23T20:14:50.753090+09:00"
+      "last_success_at": "2026-11-24T00:23:34.989956+09:00"
     },
     "kma_hourly": {
       "job_name": "kma_hourly",
@@ -82,6 +82,6 @@
     }
   },
   "recent_failures": {
-    "kma_daily": 2
+    "kma_hourly": 2
   }
 }
