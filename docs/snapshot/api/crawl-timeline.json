@@ -3,26 +3,6 @@
     "cnt": 1,
     "job_name": "hourly",
     "last_error": null,
-    "last_event_at": "2026-11-18T02:07:03.537521+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-11-18T02:00:00+09:00",
-    "total_rows": 93
-  },
-  {
-    "cnt": 1,
-    "job_name": "kma_hourly",
-    "last_error": null,
-    "last_event_at": "2026-11-18T02:07:04.444409+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-11-18T02:00:00+09:00",
-    "total_rows": 1
-  },
-  {
-    "cnt": 1,
-    "job_name": "hourly",
-    "last_error": null,
     "last_event_at": "2026-11-18T03:07:53.993557+09:00",
     "status": "SUCCESS",
     "target_range_sample": null,
@@ -4268,5 +4248,25 @@
     "target_range_sample": null,
     "time_slot": "2026-11-25T01:00:00+09:00",
     "total_rows": 1
+  },
+  {
+    "cnt": 1,
+    "job_name": "hourly",
+    "last_error": null,
+    "last_event_at": "2026-11-25T02:02:54.495655+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-11-25T02:00:00+09:00",
+    "total_rows": 93
+  },
+  {
+    "cnt": 3,
+    "job_name": "kma_hourly",
+    "last_error": "HTTPSConnectionPool(host='apihub.kma.go.kr', port=443): Read timed out. (read timeout=20) attempt=3",
+    "last_event_at": "2026-11-25T02:13:58.868480+09:00",
+    "status": "FAILED",
+    "target_range_sample": null,
+    "time_slot": "2026-11-25T02:00:00+09:00",
+    "total_rows": 0
   }
 ]
