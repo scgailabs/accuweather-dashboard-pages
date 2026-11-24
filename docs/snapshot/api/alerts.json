@@ -1,5 +1,38 @@
 [
   {
+    "alert_type": "SUCCESS",
+    "created_at": "2026-11-25T06:07:29.285553+09:00",
+    "id": 9438,
+    "job_name": "kma_hourly",
+    "message": "Saved 1 records in 0.8s (attempt=1)",
+    "sent_at": "2026-11-25T06:07:29.285553+09:00",
+    "sent_to": "discord",
+    "severity": "INFO",
+    "status": "SENT"
+  },
+  {
+    "alert_type": "RECOVERY",
+    "created_at": "2026-11-25T06:07:29.283226+09:00",
+    "id": 9437,
+    "job_name": "kma_hourly",
+    "message": "kma_hourly recovered from failure.",
+    "sent_at": "2026-11-25T06:07:29.283226+09:00",
+    "sent_to": "discord",
+    "severity": "INFO",
+    "status": "SENT"
+  },
+  {
+    "alert_type": "SUCCESS",
+    "created_at": "2026-11-25T06:07:27.958359+09:00",
+    "id": 9436,
+    "job_name": "hourly",
+    "message": "Saved 89 records in 55.9s (attempt=1)",
+    "sent_at": "2026-11-25T06:07:27.958359+09:00",
+    "sent_to": "discord",
+    "severity": "INFO",
+    "status": "SENT"
+  },
+  {
     "alert_type": "FAILURE",
     "created_at": "2026-11-25T05:17:35.036353+09:00",
     "id": 9435,
@@ -514,39 +547,6 @@
     "sent_at": "2026-11-24T16:13:05.666727+09:00",
     "sent_to": "discord",
     "severity": "INFO",
-    "status": "SENT"
-  },
-  {
-    "alert_type": "SUCCESS",
-    "created_at": "2026-11-24T16:13:04.812585+09:00",
-    "id": 9388,
-    "job_name": "daily",
-    "message": "Saved 15 records in 7.9s (attempt=1)",
-    "sent_at": "2026-11-24T16:13:04.812585+09:00",
-    "sent_to": "discord",
-    "severity": "INFO",
-    "status": "SENT"
-  },
-  {
-    "alert_type": "NO_DATA",
-    "created_at": "2026-11-24T16:11:04.858694+09:00",
-    "id": 9387,
-    "job_name": "kma_hourly",
-    "message": "0 records saved. Duration: 0.7s (attempt=2)",
-    "sent_at": "2026-11-24T16:11:04.858694+09:00",
-    "sent_to": "discord",
-    "severity": "WARNING",
-    "status": "SENT"
-  },
-  {
-    "alert_type": "NO_DATA",
-    "created_at": "2026-11-24T16:06:03.707642+09:00",
-    "id": 9386,
-    "job_name": "kma_hourly",
-    "message": "0 records saved. Duration: 0.3s (attempt=1)",
-    "sent_at": "2026-11-24T16:06:03.707642+09:00",
-    "sent_to": "discord",
-    "severity": "WARNING",
     "status": "SENT"
   }
 ]
