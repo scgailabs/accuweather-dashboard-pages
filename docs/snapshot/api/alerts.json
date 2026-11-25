@@ -1,6 +1,28 @@
 [
   {
     "alert_type": "SUCCESS",
+    "created_at": "2026-11-25T17:07:18.970470+09:00",
+    "id": 9475,
+    "job_name": "kma_hourly",
+    "message": "Saved 1 records in 0.4s (attempt=1)",
+    "sent_at": "2026-11-25T17:07:18.970470+09:00",
+    "sent_to": "discord",
+    "severity": "INFO",
+    "status": "SENT"
+  },
+  {
+    "alert_type": "SUCCESS",
+    "created_at": "2026-11-25T17:07:18.074549+09:00",
+    "id": 9474,
+    "job_name": "hourly",
+    "message": "Saved 78 records in 43.8s (attempt=1)",
+    "sent_at": "2026-11-25T17:07:18.074549+09:00",
+    "sent_to": "discord",
+    "severity": "INFO",
+    "status": "SENT"
+  },
+  {
+    "alert_type": "SUCCESS",
     "created_at": "2026-11-25T16:18:58.129441+09:00",
     "id": 9473,
     "job_name": "kma_daily",
@@ -523,28 +545,6 @@
     "job_name": "kma_hourly",
     "message": "kma_hourly recovered from failure.",
     "sent_at": "2026-11-25T03:09:51.212742+09:00",
-    "sent_to": "discord",
-    "severity": "INFO",
-    "status": "SENT"
-  },
-  {
-    "alert_type": "FAILURE",
-    "created_at": "2026-11-25T03:04:50.302954+09:00",
-    "id": 9425,
-    "job_name": "kma_hourly",
-    "message": "HTTPSConnectionPool(host='apihub.kma.go.kr', port=443): Read timed out. (read timeout=20) attempt=1",
-    "sent_at": "2026-11-25T03:04:50.302954+09:00",
-    "sent_to": "discord",
-    "severity": "CRITICAL",
-    "status": "SENT"
-  },
-  {
-    "alert_type": "SUCCESS",
-    "created_at": "2026-11-25T03:04:28.809473+09:00",
-    "id": 9424,
-    "job_name": "hourly",
-    "message": "Saved 92 records in 52.6s (attempt=1)",
-    "sent_at": "2026-11-25T03:04:28.809473+09:00",
     "sent_to": "discord",
     "severity": "INFO",
     "status": "SENT"
