@@ -3,26 +3,6 @@
     "cnt": 1,
     "job_name": "hourly",
     "last_error": null,
-    "last_event_at": "2026-11-18T09:05:17.723200+09:00",
-    "status": "SUCCESS",
-    "target_range_sample": null,
-    "time_slot": "2026-11-18T09:00:00+09:00",
-    "total_rows": 86
-  },
-  {
-    "cnt": 3,
-    "job_name": "kma_hourly",
-    "last_error": "Crawl completed but 0 records saved. Possible bot block or selector mismatch. attempt=3",
-    "last_event_at": "2026-11-18T09:15:20.841388+09:00",
-    "status": "NO_DATA",
-    "target_range_sample": null,
-    "time_slot": "2026-11-18T09:00:00+09:00",
-    "total_rows": 0
-  },
-  {
-    "cnt": 1,
-    "job_name": "hourly",
-    "last_error": null,
     "last_event_at": "2026-11-18T10:07:12.522821+09:00",
     "status": "SUCCESS",
     "target_range_sample": null,
@@ -4250,14 +4230,14 @@
     "total_rows": 87
   },
   {
-    "cnt": 1,
+    "cnt": 2,
     "job_name": "kma_daily",
     "last_error": "HTTPSConnectionPool(host='apihub.kma.go.kr', port=443): Read timed out. (read timeout=20) attempt=1",
-    "last_event_at": "2026-11-25T08:15:07.902452+09:00",
-    "status": "FAILED",
+    "last_event_at": "2026-11-25T08:20:11.482753+09:00",
+    "status": "SUCCESS",
     "target_range_sample": null,
     "time_slot": "2026-11-25T08:00:00+09:00",
-    "total_rows": 0
+    "total_rows": 1
   },
   {
     "cnt": 3,
@@ -4268,5 +4248,25 @@
     "target_range_sample": null,
     "time_slot": "2026-11-25T08:00:00+09:00",
     "total_rows": 1
+  },
+  {
+    "cnt": 1,
+    "job_name": "hourly",
+    "last_error": null,
+    "last_event_at": "2026-11-25T09:07:05.182250+09:00",
+    "status": "SUCCESS",
+    "target_range_sample": null,
+    "time_slot": "2026-11-25T09:00:00+09:00",
+    "total_rows": 86
+  },
+  {
+    "cnt": 3,
+    "job_name": "kma_hourly",
+    "last_error": "HTTPSConnectionPool(host='apihub.kma.go.kr', port=443): Read timed out. (read timeout=20) attempt=3",
+    "last_event_at": "2026-11-25T09:17:28.604324+09:00",
+    "status": "NO_DATA",
+    "target_range_sample": null,
+    "time_slot": "2026-11-25T09:00:00+09:00",
+    "total_rows": 0
   }
 ]
