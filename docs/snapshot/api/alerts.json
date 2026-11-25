@@ -1,6 +1,39 @@
 [
   {
     "alert_type": "SUCCESS",
+    "created_at": "2026-11-26T07:10:58.564193+09:00",
+    "id": 9524,
+    "job_name": "kma_hourly",
+    "message": "Saved 1 records in 1.0s (attempt=2)",
+    "sent_at": "2026-11-26T07:10:58.564193+09:00",
+    "sent_to": "discord",
+    "severity": "INFO",
+    "status": "SENT"
+  },
+  {
+    "alert_type": "NO_DATA",
+    "created_at": "2026-11-26T07:05:56.992070+09:00",
+    "id": 9523,
+    "job_name": "kma_hourly",
+    "message": "0 records saved. Duration: 0.3s (attempt=1)",
+    "sent_at": "2026-11-26T07:05:56.992070+09:00",
+    "sent_to": "discord",
+    "severity": "WARNING",
+    "status": "SENT"
+  },
+  {
+    "alert_type": "SUCCESS",
+    "created_at": "2026-11-26T07:05:56.204180+09:00",
+    "id": 9522,
+    "job_name": "hourly",
+    "message": "Saved 88 records in 46.4s (attempt=1)",
+    "sent_at": "2026-11-26T07:05:56.204180+09:00",
+    "sent_to": "discord",
+    "severity": "INFO",
+    "status": "SENT"
+  },
+  {
+    "alert_type": "SUCCESS",
     "created_at": "2026-11-26T06:04:20.598022+09:00",
     "id": 9521,
     "job_name": "kma_hourly",
@@ -512,39 +545,6 @@
     "job_name": "kma_hourly",
     "message": "Saved 1 records in 0.4s (attempt=1)",
     "sent_at": "2026-11-25T17:07:18.970470+09:00",
-    "sent_to": "discord",
-    "severity": "INFO",
-    "status": "SENT"
-  },
-  {
-    "alert_type": "SUCCESS",
-    "created_at": "2026-11-25T17:07:18.074549+09:00",
-    "id": 9474,
-    "job_name": "hourly",
-    "message": "Saved 78 records in 43.8s (attempt=1)",
-    "sent_at": "2026-11-25T17:07:18.074549+09:00",
-    "sent_to": "discord",
-    "severity": "INFO",
-    "status": "SENT"
-  },
-  {
-    "alert_type": "SUCCESS",
-    "created_at": "2026-11-25T16:18:58.129441+09:00",
-    "id": 9473,
-    "job_name": "kma_daily",
-    "message": "Saved 1 records in 0.3s (attempt=2)",
-    "sent_at": "2026-11-25T16:18:58.129441+09:00",
-    "sent_to": "discord",
-    "severity": "INFO",
-    "status": "SENT"
-  },
-  {
-    "alert_type": "RECOVERY",
-    "created_at": "2026-11-25T16:18:58.126845+09:00",
-    "id": 9472,
-    "job_name": "kma_daily",
-    "message": "kma_daily recovered from failure.",
-    "sent_at": "2026-11-25T16:18:58.126845+09:00",
     "sent_to": "discord",
     "severity": "INFO",
     "status": "SENT"
