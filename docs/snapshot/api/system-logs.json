@@ -1,6 +1,32 @@
 [
   {
     "alert_sent": true,
+    "created_at": "2026-11-27T19:07:17.317323+09:00",
+    "duration_seconds": 0.760458,
+    "ended_at": "2026-11-27T19:07:16.930308+09:00",
+    "error_message": "kma_hourly crawl completed. 1 records saved. attempt=1",
+    "id": 9432,
+    "job_name": "kma_hourly",
+    "rows_inserted": 1,
+    "run_id": "7285f4c1-a1",
+    "started_at": "2026-11-27T19:07:16.169850+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
+    "created_at": "2026-11-27T19:07:16.043405+09:00",
+    "duration_seconds": 52.86651,
+    "ended_at": "2026-11-27T19:07:15.643368+09:00",
+    "error_message": "hourly crawl completed. 76 records saved. attempt=1",
+    "id": 9431,
+    "job_name": "hourly",
+    "rows_inserted": 76,
+    "run_id": "2fe34582-a1",
+    "started_at": "2026-11-27T19:06:22.776858+09:00",
+    "status": "SUCCESS"
+  },
+  {
+    "alert_sent": true,
     "created_at": "2026-11-27T18:05:19.127561+09:00",
     "duration_seconds": 0.253711,
     "ended_at": "2026-11-27T18:05:18.409039+09:00",
@@ -1271,32 +1297,6 @@
     "rows_inserted": 1,
     "run_id": "87e3cd0b-a2",
     "started_at": "2026-11-26T12:10:01.158175+09:00",
-    "status": "SUCCESS"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-11-26T12:05:01.023095+09:00",
-    "duration_seconds": 0.311072,
-    "ended_at": "2026-11-26T12:05:00.675057+09:00",
-    "error_message": "Crawl completed but 0 records saved. Possible bot block or selector mismatch. attempt=1",
-    "id": 9332,
-    "job_name": "kma_hourly",
-    "rows_inserted": 0,
-    "run_id": "142efc14-a1",
-    "started_at": "2026-11-26T12:05:00.363985+09:00",
-    "status": "NO_DATA"
-  },
-  {
-    "alert_sent": true,
-    "created_at": "2026-11-26T12:05:00.245121+09:00",
-    "duration_seconds": 54.4636,
-    "ended_at": "2026-11-26T12:04:59.457020+09:00",
-    "error_message": "hourly crawl completed. 83 records saved. attempt=1",
-    "id": 9331,
-    "job_name": "hourly",
-    "rows_inserted": 83,
-    "run_id": "50bd9415-a1",
-    "started_at": "2026-11-26T12:04:04.993421+09:00",
     "status": "SUCCESS"
   }
 ]
